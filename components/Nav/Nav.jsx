@@ -8,9 +8,9 @@ function Nav() {
     <div className={styles.navContainer}>
       <div className={styles.navWrapper}>
         <div className={styles.navLogo}>
-          <a href="/">
+          <Link href="/">
             <Image src={logo} />
-          </a>
+          </Link>
         </div>
         <div className={styles.navLinks}>
           <ul>

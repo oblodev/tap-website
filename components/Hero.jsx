@@ -13,9 +13,9 @@ function Hero() {
           </h1>
           <p>Ihre Tierarztpraxis in Baden bei Wien</p>
           <div className={styles.heroBtns}>
-            <a href="/leistungen">
+            <Link href="/leistungen">
               <button className={styles.btnL}>Leistungen</button>
-            </a>
+            </Link>
 
             <Link href="/kontakt">
               <button className={styles.btnC}>Kontakt</button>

@@ -50,12 +50,20 @@ function Footer() {
           <p>Tierarztpraxis Quehenberger 2022 © </p>
           <div className={styles.footerIcons}>
             <div className={styles.footerIconFb}>
-              <a href="https://de-de.facebook.com/DoktorBully/" target="_blank">
+              <a
+                href="https://de-de.facebook.com/DoktorBully/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsFacebook />
               </a>
             </div>
             <div className={styles.footerIconIg}>
-              <a href="https://www.instagram.com/DoktorBully/" target="_blank">
+              <a
+                href="https://www.instagram.com/DoktorBully/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsInstagram />
               </a>
             </div>
