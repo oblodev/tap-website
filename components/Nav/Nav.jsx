@@ -22,7 +22,9 @@ function Nav() {
             <li>
               <a href="/mopsundco">Mops & Co.</a>
             </li>
-            <li>Kontakt</li>
+            <li>
+              <a href="/kontakt">Kontakt</a>
+            </li>
           </ul>
         </div>
       </div>

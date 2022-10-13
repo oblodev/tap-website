@@ -36,7 +36,13 @@ function Footer() {
             <li>Komplexlappentechnik</li>
           </ul>
           <ul>
-            <li>Kontakt</li>
+            <li>Datenschutz</li>
+            <li>Impressum</li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/kontakt">Kontakt</a>
+            </li>
           </ul>
         </div>
         <div className={styles.footerBottom}>

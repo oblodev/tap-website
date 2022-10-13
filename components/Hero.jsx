@@ -12,10 +12,13 @@ function Hero() {
           </h1>
           <p>Ihre Tierarztpraxis in Baden bei Wien</p>
           <div className={styles.heroBtns}>
-            <button className={styles.btnL}>
-              <a href="/leistungen">Leistungen</a>{" "}
-            </button>
-            <button className={styles.btnC}>Kontakt</button>
+            <a href="/leistungen">
+              <button className={styles.btnL}>Leistungen</button>
+            </a>
+
+            <a href="/kontakt">
+              <button className={styles.btnC}>Kontakt</button>
+            </a>
           </div>
         </div>
         <div className={styles.heroImage}>

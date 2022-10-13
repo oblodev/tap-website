@@ -46,7 +46,9 @@ function mopsundco() {
             </div>
             <div className={styles.contactHeader}>
               <h3>Medizinische Betreuung</h3>
-              <button className={styles.contactBtn}>Kontakt</button>
+              <a href="/kontakt">
+                <button className={styles.contactBtn}>Kontakt</button>
+              </a>
             </div>
           </div>
 

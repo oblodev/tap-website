@@ -15,7 +15,10 @@ function Fragen() {
             Sie können uns telefonisch erreichen, oder besuchen Sie uns nach
             Terminvereinbarung direkt vor Ort – wir freuen uns auf Sie!
           </p>
-          <button className={styles.fragenBtn}>Kontakt</button>
+
+          <a href="/kontakt">
+            <button className={styles.fragenBtn}>Kontakt</button>
+          </a>
         </div>
       </div>
     </div>
