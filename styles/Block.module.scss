@@ -1,0 +1,52 @@
+.blockContainer {
+  margin: auto;
+  margin-bottom: 14rem;
+
+  .blockWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #04436f;
+    width: 75%;
+    margin: auto;
+    margin-top: 12rem;
+    padding: 2rem 4rem 0rem 4rem;
+    color: #fff;
+    border-radius: 12px;
+
+    h3 {
+      font-size: 2.25rem;
+    }
+
+    .blockTel {
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+
+      .blockIcon {
+        font-size: 1.75rem !important;
+        margin-right: 0.75rem;
+      }
+    }
+
+    .blockMail {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+
+      .blockIcon {
+        font-size: 2rem !important;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+
+  .blockLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

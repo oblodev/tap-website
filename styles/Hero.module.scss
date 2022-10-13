@@ -1,0 +1,84 @@
+.heroContainer {
+  max-width: 1400px;
+  height: 80vh !important;
+  margin: auto;
+  margin-top: 6rem;
+
+  .heroWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heroHeader {
+      flex: 0.5;
+      text-align: left;
+
+      h1 {
+        width: 60%;
+        margin: auto;
+        font-size: 3.8rem;
+
+        span {
+          font-size: 2.75rem;
+        }
+      }
+
+      p {
+        margin: auto;
+        width: 60%;
+        margin-top: 1rem;
+        font-size: 1.15rem;
+      }
+
+      .heroBtns {
+        width: 60%;
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+        padding-top: 1rem;
+
+        .btnL {
+          padding: 0.75rem 2.75rem;
+          color: #fff;
+          background-color: #04436f;
+          margin-right: 4rem;
+          border: 0;
+          font-weight: 500;
+          font-size: 1rem;
+          border: 1px solid #fff;
+          transition: 0.3s all ease-in-out;
+        }
+
+        .btnL:hover {
+          background-color: #fff;
+          color: #04436f;
+          border: 1px solid #04436f;
+          cursor: pointer;
+        }
+
+        .btnC {
+          padding: 0.75rem 2.95rem;
+          color: #04436f;
+          background-color: #fff;
+          border: 1px solid #04436f;
+          font-weight: 500;
+          font-size: 1rem;
+          transition: 0.3s all ease-in-out;
+        }
+
+        .btnC:hover {
+          background-color: #04436f;
+          color: #fff;
+          border: 1px solid #fff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .heroImage {
+      flex: 0.5;
+      overflow: hidden;
+      max-height: 900px !important;
+    }
+  }
+}

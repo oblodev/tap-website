@@ -1,0 +1,57 @@
+.heroInfoContainer {
+  max-width: 1400px;
+  margin-top: 10rem;
+  margin: auto;
+
+  .heroInfoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heroInfoImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 4rem;
+
+      img {
+        border: 1px solid red;
+        width: 400px;
+        height: 400px;
+      }
+    }
+
+    .heroInfoText {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 6rem;
+
+      h2 {
+        width: 80%;
+        padding-left: 2rem;
+      }
+
+      h3 {
+        margin: 0;
+        padding-left: 2rem;
+      }
+
+      p {
+        width: 80%;
+        padding-left: 2rem;
+      }
+
+      button {
+        width: 30%;
+        margin-left: 2rem;
+        padding: 0.5rem 2rem;
+        color: #04436f;
+        background-color: #fff;
+        border: 1px solid #04436f;
+        font-size: 0.935rem;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

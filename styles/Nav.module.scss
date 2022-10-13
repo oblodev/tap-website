@@ -1,0 +1,29 @@
+.navContainer {
+  border-bottom: 1px solid #bfbdbd;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  .navWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+
+    .navLogo {
+      width: 320px;
+    }
+
+    .navLinks {
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          list-style-type: none;
+          margin-right: 1.25rem;
+        }
+      }
+    }
+  }
+}

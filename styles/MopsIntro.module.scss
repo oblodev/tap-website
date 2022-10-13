@@ -1,0 +1,39 @@
+.mopsIntroContainer {
+  max-width: 1400px;
+  margin: auto;
+
+  .mopsIntroWrapper {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-around;
+    flex-direction: row;
+
+    .mopsIntroInfo {
+      max-width: 320px;
+      border: 1px solid rgb(193, 193, 193);
+      padding: 0.75rem;
+      margin-right: 1.5rem;
+      padding-bottom: 1.75rem;
+
+      .mopsIntroIcon {
+        font-size: 4.25rem;
+        text-align: center;
+        margin-top: 1rem;
+        color: #04436f;
+        transition: 0.3s all ease-in-out;
+      }
+
+      .mopsIntroIcon:hover {
+        transform: scale(1.4);
+      }
+
+      .mopsIntroInfoText {
+        h3 {
+          font-size: 1.15rem;
+          margin-top: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.container {
+  max-width: 1400px;
+  margin: auto;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16rem;
+
+      .heroImage {
+        max-width: 880px;
+        margin-top: 6rem;
+      }
+
+      .heroText {
+        display: flex;
+        position: relative;
+
+        h2 {
+          position: absolute;
+          top: -130px;
+          left: -100px;
+
+          z-index: 100;
+
+          font-size: 5.2rem;
+
+          color: #04436f;
+        }
+
+        ul {
+          list-style-type: none;
+          right: -90px;
+          position: absolute;
+          line-height: 1.7;
+          top: 6px;
+          text-align: right;
+          font-size: 0.95rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .contact {
+      margin-top: 10rem;
+      background-color: #04436f;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 4rem 0 4rem;
+      color: #fff;
+      border-radius: 16px;
+      width: 90%;
+
+      .contactWrapper {
+        display: flex;
+        .contactText {
+          flex: 0.5;
+
+          p {
+            padding: 2rem 2rem;
+            line-height: 2;
+            font-weight: 500;
+            font-size: 1.05rem;
+          }
+        }
+
+        .contactHeader {
+          flex: 0.5;
+          padding: 0 1rem 1rem 0.5rem;
+
+          h3 {
+            font-size: 2.25rem;
+          }
+
+          button {
+            padding: 0.5rem 6rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: #04436f;
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      .logo {
+        width: 30%;
+      }
+    }
+  }
+}

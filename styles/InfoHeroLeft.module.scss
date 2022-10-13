@@ -1,0 +1,26 @@
+.infoContainer {
+  .infoWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 14rem;
+    padding: 2.5rem;
+
+    .infoText {
+      flex: 0.5;
+
+      h3 {
+        font-size: 1.85rem;
+        padding-left: 4rem;
+      }
+
+      p {
+        width: 90%;
+        padding-left: 4rem;
+      }
+    }
+
+    .infoImage {
+      flex: 0.5;
+    }
+  }
+}

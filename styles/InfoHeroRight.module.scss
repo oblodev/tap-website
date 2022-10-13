@@ -1,0 +1,34 @@
+.infoContainer {
+  .infoWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 14rem;
+    padding: 2.5rem;
+
+    .infoText {
+      flex: 0.5;
+
+      h3 {
+        font-size: 1.85rem;
+      }
+
+      p {
+        width: 80%;
+      }
+
+      button {
+        padding: 0.75rem 2rem;
+        margin-top: 1.5rem;
+        color: #04436f;
+        border: 1px solid #04436f;
+        background-color: #fff;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+    }
+
+    .infoImage {
+      flex: 0.5;
+    }
+  }
+}
