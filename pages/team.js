@@ -76,8 +76,8 @@ function team() {
               Artgenossen Entspannung in der Ordination zu vermitteln. Durch
               Ausbildung wurde dann mein Talent gefördert und so habe in der
               Zwischenzeit ein richtiges Programm, in welchem ich in
-              Hundesprache immer sage: "Wenn ich hier keine Angst zu haben
-              brauche, brauchst du das auch nicht." Da ich selbst nicht der
+              Hundesprache immer sage: &quot;Wenn ich hier keine Angst zu haben
+              brauche, brauchst du das auch nicht.&quot; Da ich selbst nicht der
               mutigste bin, verstehe ich die Ängste beim Tierarztbesuch gut. Für
               hibbelige Kurzschnauzer ist dann aber mein Kollege Diego
               zuständig.
