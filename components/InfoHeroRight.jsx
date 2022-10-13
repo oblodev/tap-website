@@ -1,6 +1,7 @@
 import styles from "../styles/InfoHeroRight.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 function InfoHeroRight() {
   return (
@@ -13,9 +14,9 @@ function InfoHeroRight() {
             Besonders unsere Kurzschnauzer haben unter speziellen Problemen zu
             kämpfen.
           </p>
-          <a href="/mopsundco">
+          <Link href="/mopsundco">
             <button>Mehr erfahren</button>
-          </a>
+          </Link>
         </div>
         <div className={styles.infoImage}>
           <Image src={pug} />

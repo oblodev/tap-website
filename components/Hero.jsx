@@ -1,6 +1,7 @@
 import styles from "../styles/Hero.module.scss";
 import Image from "next/image";
 import heroImage from "../public/images/Dr.jpg";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -16,9 +17,9 @@ function Hero() {
               <button className={styles.btnL}>Leistungen</button>
             </a>
 
-            <a href="/kontakt">
+            <Link href="/kontakt">
               <button className={styles.btnC}>Kontakt</button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.heroImage}>

@@ -6,6 +6,7 @@ import weiss from "../public/images/weiss.png";
 import MopsInfoLeft from "../components/MopsInfoLeft";
 import MopsInfoRight from "../components/MopsInfoRight";
 import MopsInfoLeftSec from "../components/MopsInfoLeftSec";
+import Link from "next/link";
 
 function mopsundco() {
   return (
@@ -19,13 +20,13 @@ function mopsundco() {
             <h2>Mops & Co.</h2>
             <ul>
               <li>
-                <a href="#atem"> Atemnot</a>
+                <Link href="#atem"> Atemnot</Link>
               </li>
               <li>
-                <a href="#augen"> Augenprobleme</a>
+                <Link href="#augen"> Augenprobleme</Link>
               </li>
               <li>
-                <a href="#magen"> Magenprobleme</a>
+                <Link href="#magen"> Magenprobleme</Link>
               </li>
             </ul>
           </div>
@@ -46,9 +47,9 @@ function mopsundco() {
             </div>
             <div className={styles.contactHeader}>
               <h3>Medizinische Betreuung</h3>
-              <a href="/kontakt">
+              <Link href="/kontakt">
                 <button className={styles.contactBtn}>Kontakt</button>
-              </a>
+              </Link>
             </div>
           </div>
 

@@ -1,4 +1,5 @@
 import styles from "../styles/Fragen.module.scss";
+import Link from "next/link";
 
 function Fragen() {
   return (
@@ -16,9 +17,9 @@ function Fragen() {
             Terminvereinbarung direkt vor Ort – wir freuen uns auf Sie!
           </p>
 
-          <a href="/kontakt">
+          <Link href="/kontakt">
             <button className={styles.fragenBtn}>Kontakt</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

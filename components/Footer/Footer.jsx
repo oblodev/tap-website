@@ -1,6 +1,7 @@
 import styles from "../../styles/Footer.module.scss";
 import Image from "next/image";
 import bully from "../../public/images/bully.png";
+import Link from "next/link";
 
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 
@@ -23,15 +24,15 @@ function Footer() {
         <div className={styles.footerLinks}>
           <ul>
             <li>
-              <a href="/leistungen">Leistungen</a>{" "}
+              <Link href="/leistungen">Leistungen</Link>
             </li>
             <li>
-              <a href="/team">Team</a>
+              <Link href="/team">Team</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="/mopsundco">Mops & Co.</a>
+              <Link href="/mopsundco">Mops & Co.</Link>
             </li>
             <li>Komplexlappentechnik</li>
           </ul>
@@ -41,7 +42,7 @@ function Footer() {
           </ul>
           <ul>
             <li>
-              <a href="/kontakt">Kontakt</a>
+              <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
         </div>

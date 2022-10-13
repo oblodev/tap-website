@@ -1,6 +1,7 @@
 import styles from "../styles/InfoHero.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 function InfoHero() {
   return (
@@ -23,9 +24,9 @@ function InfoHero() {
             bis hin zu akuter Atemnot beeinträchtigen erheblich das Leben von
             Mops, Frenchy & Co.
           </p>
-          <a href="/mopsundco">
+          <Link href="/mopsundco">
             <button className={styles.heroInfoBtn}>Mehr erfahren </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

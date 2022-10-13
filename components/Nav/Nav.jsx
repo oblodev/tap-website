@@ -1,6 +1,7 @@
 import styles from "../../styles/Nav.module.scss";
 import Image from "next/image";
 import logo from "../../public/images/logo_blau.png";
+import Link from "next/link";
 
 function Nav() {
   return (
@@ -14,16 +15,16 @@ function Nav() {
         <div className={styles.navLinks}>
           <ul>
             <li>
-              <a href="/leistungen">Leistungen</a>{" "}
+              <Link href="/leistungen">Leistungen</Link>{" "}
             </li>
             <li>
-              <a href="/team">Team</a>
+              <Link href="/team">Team</Link>
             </li>
             <li>
-              <a href="/mopsundco">Mops & Co.</a>
+              <Link href="/mopsundco">Mops & Co.</Link>
             </li>
             <li>
-              <a href="/kontakt">Kontakt</a>
+              <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
         </div>
