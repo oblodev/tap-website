@@ -12,6 +12,7 @@
 
     .navLogo {
       width: 320px;
+      cursor: pointer;
     }
 
     .navLinks {
@@ -22,6 +23,11 @@
         li {
           list-style-type: none;
           margin-right: 1.25rem;
+          transition: 0.3s all ease-in-out;
+        }
+
+        li:hover {
+          color: #04436f;
         }
       }
     }

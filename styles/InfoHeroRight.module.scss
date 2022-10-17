@@ -10,6 +10,7 @@
 
       h3 {
         font-size: 1.85rem;
+        color: #04436f;
       }
 
       p {
@@ -17,13 +18,19 @@
       }
 
       button {
-        padding: 0.75rem 2rem;
+        padding: 0.75rem 4rem;
         margin-top: 1.5rem;
         color: #04436f;
-        border: 1px solid #04436f;
+        border: 2px solid #04436f;
         background-color: #fff;
         font-size: 0.9rem;
         cursor: pointer;
+        transition: 0.3s all ease-in-out;
+      }
+
+      button:hover {
+        background-color: #04436f;
+        color: #fff;
       }
     }
 
