@@ -7,7 +7,12 @@ function InfoHeroLeft() {
     <div className={styles.infoContainer}>
       <div className={styles.infoWrapper}>
         <div className={styles.infoImage}>
-          <Image src={pug} />
+          <Image
+            src={pug}
+            alt="info-foto"
+            layout="responsive"
+            objectFit="cover"
+          />
         </div>
         <div className={styles.infoText}>
           <h3>Endoskopische Kastration</h3>

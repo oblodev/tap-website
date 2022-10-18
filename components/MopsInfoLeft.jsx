@@ -7,7 +7,12 @@ function MopsInfoLeft() {
     <div className={styles.infoContainer}>
       <div className={styles.infoWrapper} id="atem">
         <div className={styles.infoImage}>
-          <Image src={pug} />
+          <Image
+            src={pug}
+            alt="info-foto"
+            layout="responsive"
+            objectFit="cover"
+          />
         </div>
         <div className={styles.infoText}>
           <h3>Atemnot</h3>

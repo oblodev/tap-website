@@ -29,7 +29,12 @@ function InfoHeroHigh() {
           </p>
         </div>
         <div className={styles.infoImage}>
-          <Image src={dent} />
+          <Image
+            src={dent}
+            alt="info-foto"
+            layout="responsive"
+            objectFit="cover"
+          />
         </div>
       </div>
     </div>

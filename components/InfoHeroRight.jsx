@@ -19,7 +19,12 @@ function InfoHeroRight() {
           </Link>
         </div>
         <div className={styles.infoImage}>
-          <Image src={pug} />
+          <Image
+            src={pug}
+            alt="info-foto"
+            layout="responsive"
+            objectFit="cover"
+          />
         </div>
       </div>
     </div>

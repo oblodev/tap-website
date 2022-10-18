@@ -2,6 +2,10 @@
   margin: auto;
   margin-bottom: 14rem;
 
+  @media screen and (max-width: 450px) {
+    margin-bottom: 4rem;
+  }
+
   .blockWrapper {
     display: flex;
     align-items: center;
@@ -14,9 +18,23 @@
     padding: 2rem 4rem 0rem 4rem;
     color: #fff;
     border-radius: 12px;
+    box-shadow: 8px 8px 5px #ccc;
+    -moz-box-shadow: 8px 8px 5px #ccc;
+    -webkit-box-shadow: 8px 8px 5px #ccc;
+    -khtml-box-shadow: 8px 8px 5px #ccc;
+
+    @media screen and (max-width: 450px) {
+      width: 90%;
+    }
 
     h3 {
       font-size: 2.25rem;
+
+      @media screen and (max-width: 450px) {
+        font-size: 1.75rem;
+        text-align: center;
+        width: 100%;
+      }
     }
 
     .blockTel {
@@ -24,9 +42,17 @@
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 450px) {
+        font-size: 1.5rem !important;
+      }
+
       .blockIcon {
-        font-size: 1.75rem !important;
+        font-size: 1.75rem;
         margin-right: 0.75rem;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -36,10 +62,19 @@
       display: flex;
       align-items: center;
       text-decoration: underline;
+      @media screen and (max-width: 450px) {
+        font-size: 1rem !important;
+        text-align: center;
+      }
 
       .blockIcon {
         font-size: 2rem !important;
         margin-right: 0.75rem;
+
+        @media screen and (max-width: 450px) {
+          display: none;
+          width: 100%;
+        }
       }
     }
   }

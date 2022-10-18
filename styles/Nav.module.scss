@@ -13,6 +13,16 @@
     .navLogo {
       width: 320px;
       cursor: pointer;
+
+      @media screen and (max-width: 450px) {
+        max-width: 220px;
+        margin-left: 1rem;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        max-width: 280px;
+        margin-left: 1rem;
+      }
     }
 
     .navLinks {
@@ -29,6 +39,29 @@
         li:hover {
           color: #04436f;
         }
+      }
+
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .navHamburger {
+      display: none;
+      font-size: 1.75rem;
+      margin-right: 1rem;
+      color: #04436f;
+
+      @media screen and (max-width: 450px) {
+        display: block;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        display: block;
       }
     }
   }

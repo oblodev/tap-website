@@ -57,9 +57,14 @@
       color: #fff;
       border-radius: 16px;
       width: 90%;
+      box-shadow: 8px 8px 5px #ccc;
+      -moz-box-shadow: 8px 8px 5px #ccc;
+      -webkit-box-shadow: 8px 8px 5px #ccc;
+      -khtml-box-shadow: 8px 8px 5px #ccc;
 
       .contactWrapper {
         display: flex;
+
         .contactText {
           flex: 0.5;
 

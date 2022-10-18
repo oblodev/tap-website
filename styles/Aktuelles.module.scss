@@ -3,6 +3,11 @@
   margin: auto;
   margin-top: 8rem;
   margin-bottom: 12rem;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
   .aktWrapper {
     display: flex;
     flex-direction: column;
@@ -10,12 +15,23 @@
 
     h2 {
       font-size: 2.25rem;
+
+      @media screen and (max-width: 450px) {
+        text-align: center;
+      }
     }
 
     .aktLinks {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0.5rem;
+
+      @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+      }
 
       .aktLink {
         width: 340px;
