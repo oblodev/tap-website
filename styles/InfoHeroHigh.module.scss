@@ -5,15 +5,30 @@
     margin-top: 12rem;
     padding: 2.5rem;
 
+    @media screen and (max-width: 450px) {
+      margin-top: 4rem;
+      padding: 1rem 2rem 1rem 2rem;
+
+      flex-direction: column;
+    }
+
     .infoText {
       flex: 0.5;
       h3 {
         font-size: 1.85rem;
         color: #04436f;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1.5rem;
+        }
       }
 
       p {
         width: 80%;
+
+        @media screen and (max-width: 450px) {
+          width: 100%;
+        }
       }
     }
 
