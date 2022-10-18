@@ -7,6 +7,14 @@
     margin-top: 1rem;
   }
 
+  @media screen and (min-width: 451px) and (max-width: 768px) {
+    margin-top: 6rem;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    margin-top: -2rem;
+  }
+
   .heroInfoWrapper {
     display: flex;
     align-items: center;
@@ -14,6 +22,10 @@
 
     @media screen and (max-width: 450px) {
       flex-direction: column;
+    }
+
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+      flex-direction: column-reverse;
     }
 
     .heroInfoImage {
@@ -34,6 +46,24 @@
         -webkit-box-shadow: 10px 10px #04436f;
         -khtml-box-shadow: 10px 10px #04436f;
       }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        margin: 1rem;
+        box-shadow: 10px 10px #04436f;
+        -moz-box-shadow: 10px 10px #04436f;
+        -webkit-box-shadow: 10px 10px #04436f;
+        -khtml-box-shadow: 10px 10px #04436f;
+        margin: 1.75rem;
+        margin-top: 6rem;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        box-shadow: 12px 12px #04436f;
+        -moz-box-shadow: 12px 12px #04436f;
+        -webkit-box-shadow: 12px 12px #04436f;
+        -khtml-box-shadow: 12px 12px #04436f;
+        margin: 1.25em;
+      }
     }
 
     .heroInfoText {
@@ -45,6 +75,18 @@
         padding: 2rem;
       }
 
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        padding: 1rem;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        padding: 1rem;
+      }
+
+      @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        padding: 1.5rem;
+      }
+
       h2 {
         width: 80%;
         padding-left: 2rem;
@@ -53,6 +95,18 @@
         @media screen and (max-width: 450px) {
           width: 100%;
           padding: 1rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          width: 100%;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          width: 100%;
+        }
+
+        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+          width: 100%;
         }
       }
 
@@ -73,6 +127,14 @@
           width: 100%;
           padding-left: 1rem;
         }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          width: 92%;
+        }
+
+        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+          width: 90%;
+        }
       }
 
       button {
@@ -91,11 +153,25 @@
           width: 100%;
           margin-left: 0;
         }
-      }
 
-      button:hover {
-        background-color: #04436f;
-        color: #fff;
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          margin: auto;
+          width: 80%;
+          margin-top: 2rem;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          width: 80%;
+        }
+
+        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+          width: 50%;
+        }
+
+        button:hover {
+          background-color: #04436f;
+          color: #fff;
+        }
       }
     }
   }

@@ -7,6 +7,18 @@
     margin-top: 4rem;
   }
 
+  @media screen and (min-width: 451px) and (max-width: 768px) {
+    margin-top: 3rem;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    margin-top: 6rem;
+  }
+
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    margin-top: 2rem;
+  }
+
   .footerWrapper {
     display: flex;
     max-width: 1400px;
@@ -14,12 +26,21 @@
     display: flex;
     flex-direction: column;
 
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+      padding: 1rem;
+    }
+
     .footerHeader {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
 
       @media screen and (max-width: 450px) {
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
         flex-direction: column;
         margin: 0 1rem 0 1rem;
       }
@@ -35,6 +56,11 @@
         @media screen and (max-width: 450px) {
           font-size: 1.2rem;
         }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          font-size: 0.85rem;
+          padding-left: 1rem;
+        }
       }
 
       p {
@@ -43,6 +69,11 @@
 
         @media screen and (max-width: 450px) {
           font-size: 0.775rem;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          font-size: 0.75rem;
+          padding-right: 1rem;
         }
 
         span {
@@ -60,6 +91,15 @@
         text-align: center;
       }
 
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        padding-left: 1rem;
+      }
+
       ul {
         list-style-type: none;
         padding: 0;
@@ -73,6 +113,14 @@
           @media screen and (max-width: 450px) {
             margin-right: 0rem;
           }
+
+          @media screen and (min-width: 451px) and (max-width: 768px) {
+            margin-right: 0;
+          }
+
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            margin-right: 2.25rem;
+          }
         }
       }
     }
@@ -84,8 +132,18 @@
       margin-bottom: 1.25rem;
 
       @media screen and (max-width: 450px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
 
       p {
@@ -101,6 +159,13 @@
           align-items: center;
           justify-content: center;
           margin-right: 0;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          align-items: center;
+          justify-content: center;
+          margin-right: 0;
+          margin-top: 1rem;
         }
 
         .footerIconFb {

@@ -10,6 +10,19 @@
     max-width: 1400px;
     margin: auto;
 
+    @media screen and (max-width: 450px) {
+      margin-top: 0.5rem;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      margin: 0 2rem 0 2rem;
+    }
+
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
     .navLogo {
       width: 320px;
       cursor: pointer;
