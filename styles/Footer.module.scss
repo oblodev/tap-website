@@ -16,10 +16,12 @@
 
     .footerHeader {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+
       @media screen and (max-width: 450px) {
         flex-direction: column;
+        margin: 0 1rem 0 1rem;
       }
 
       .footerHeaderTag {
@@ -29,11 +31,19 @@
       h2 {
         font-size: 1.45rem;
         color: #04436f;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1.2rem;
+        }
       }
 
       p {
         font-size: 0.9rem;
         color: #04436f;
+
+        @media screen and (max-width: 450px) {
+          font-size: 0.775rem;
+        }
 
         span {
           font-weight: 900;
