@@ -1,8 +1,7 @@
 .heroContainer {
   max-width: 1400px;
-  height: 80vh !important;
+  height: 100vh;
   margin: auto;
-  margin-top: 6rem;
 
   @media screen and (max-width: 450px) {
     margin-top: 50%;
@@ -21,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 
     @media screen and (min-width: 451px) and (max-width: 768px) {
       flex-direction: column;
@@ -165,7 +165,7 @@
   .heroImage {
     flex: 0.5;
     overflow: hidden;
-    max-height: 900px !important;
+    max-height: 700px !important;
 
     @media screen and (max-width: 450px) {
       display: none !important;
