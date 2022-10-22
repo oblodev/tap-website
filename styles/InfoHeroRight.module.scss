@@ -8,12 +8,18 @@
     @media screen and (max-width: 450px) {
       margin-top: 4rem;
       padding: 1rem 2rem 1rem 2rem;
-
-      flex-direction: column;
     }
 
     .infoText {
       flex: 0.5;
+
+      @media screen and (max-width: 450px) {
+        flex: 1;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        flex: 1;
+      }
 
       h3 {
         font-size: 1.85rem;
@@ -55,6 +61,16 @@
       -moz-box-shadow: 12px 12px #04436f;
       -webkit-box-shadow: 12px 12px #04436f;
       -khtml-box-shadow: 12px 12px #04436f;
+
+      @media screen and (max-width: 450px) {
+        display: none;
+        flex: 0;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        display: none;
+        flex: 0;
+      }
     }
   }
 }

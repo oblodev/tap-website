@@ -5,6 +5,20 @@
     margin-top: 8rem;
     padding: 2.5rem;
 
+    @media screen and (max-width: 450px) {
+      margin-top: 4rem;
+      padding: 1rem;
+
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+      margin-top: 4rem;
+      padding: 1rem;
+
+      flex-direction: column;
+    }
+
     .infoText {
       flex: 0.5;
 
@@ -13,26 +27,56 @@
         padding-left: 4rem;
         margin-bottom: 1rem;
         color: #04436f;
+        @media screen and (max-width: 450px) {
+          padding-left: 0.5rem;
+        }
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          padding-left: 1rem;
+        }
       }
 
       h4 {
         padding-left: 4rem;
         margin-top: 0;
+        @media screen and (max-width: 450px) {
+          padding-left: 0.5rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          padding-left: 1rem;
+        }
       }
 
       p {
         width: 90%;
         padding-left: 4rem;
         line-height: 1.5;
+        @media screen and (max-width: 450px) {
+          padding-left: 0.5rem;
+          width: 95%;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          padding-left: 1rem;
+          width: 95%;
+        }
       }
     }
 
     .infoImage {
       flex: 0.5;
-      box-shadow: 8px 8px 5px #ccc;
-      -moz-box-shadow: 8px 8px 5px #ccc;
-      -webkit-box-shadow: 8px 8px 5px #ccc;
-      -khtml-box-shadow: 8px 8px 5px #ccc;
+      box-shadow: 12px 12px #04436f;
+      -moz-box-shadow: 12px 12px #04436f;
+      -webkit-box-shadow: 12px 12px #04436f;
+      -khtml-box-shadow: 12px 12px #04436f;
+
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }

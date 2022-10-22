@@ -14,17 +14,51 @@
     padding: 4rem 6rem;
     border-radius: 12px;
 
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      padding: 2rem 2rem;
+      margin-top: 4rem;
+      width: 90%;
+    }
+
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+      flex-direction: column;
+      padding: 4rem 2rem;
+      width: 85%;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      width: 92%;
+      padding: 4rem 2rem;
+    }
+
     .fragenHeader {
       h2 {
         font-size: 2rem;
         margin: 0;
         width: 90%;
+
+        @media screen and (max-width: 450px) {
+          width: 100%;
+          font-size: 1.75rem;
+          margin-bottom: 2rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
 
     .fragenInfo {
       p {
         font-size: 1.05rem;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1rem;
+        }
       }
 
       .fragenBtn {
@@ -37,6 +71,11 @@
         margin-top: 1rem;
         transition: 0.2s all ease-in;
         font-weight: 600;
+
+        @media screen and (max-width: 450px) {
+          width: 100%;
+          margin-top: 2rem;
+        }
       }
 
       .fragenBtn:hover {

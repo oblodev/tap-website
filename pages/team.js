@@ -9,14 +9,18 @@ function team() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Unser Praxis-Team</h1>
-        <p className={styles.wrapperText}>
-          Unser Team besteht aus hervorragend ausgebildeten und motivierten
-          Mitarbeitern, die nicht nur absolute Experten auf ihrem Gebiet sind
-          sondern auch mit Herzblut bei der Arbeit sind. Dank ihrer langjährigen
-          Erfahrung im Tierarztbereich können sie jederzeit umfangreichen,
-          erstklassigen Service für unsere vierbeinigen Patienten anbieten.
-        </p>
+        <div className={styles.header}>
+          <h1>Unser Praxis-Team</h1>
+          <p className={styles.wrapperText}>
+            Unser Team besteht aus hervorragend ausgebildeten und motivierten
+            Mitarbeitern, die nicht nur absolute Experten auf ihrem Gebiet sind
+            sondern auch mit Herzblut bei der Arbeit sind. Dank ihrer
+            langjährigen Erfahrung im Tierarztbereich können sie jederzeit
+            umfangreichen, erstklassigen Service für unsere vierbeinigen
+            Patienten anbieten.
+          </p>
+        </div>
+
         <div className={styles.team}>
           <div className={styles.teamMember}>
             <Image src={team1} />
@@ -65,7 +69,12 @@ function team() {
         <div className={styles.dogMember}>
           <div className={styles.dog}>
             <div className={styles.dogImage}>
-              <Image src={nils} />
+              <Image
+                src={nils}
+                alt="dog-member-foto"
+                layout="responsive"
+                objectFit="cover"
+              />
             </div>
 
             <h3>Nils</h3>
@@ -85,7 +94,12 @@ function team() {
           </div>
           <div className={styles.dog}>
             <div className={styles.dogImage}>
-              <Image src={diego} />
+              <Image
+                src={diego}
+                alt="dog-member-foto"
+                layout="responsive"
+                objectFit="cover"
+              />
             </div>
             <h3>Diego</h3>
             <h4>Hundepsychologe, Aufgeregtheitstherapie</h4>

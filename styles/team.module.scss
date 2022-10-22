@@ -3,31 +3,90 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  max-width: 1400px;
+  margin: auto;
   .wrapper {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     margin-top: 4rem;
+    width: 100%;
 
-    h1 {
-      font-size: 2.5rem;
+    @media screen and (max-width: 450px) {
+      width: 100%;
     }
 
-    .wrapperText {
-      width: 50%;
-      line-height: 1.75;
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 450px) {
+        padding: 2rem;
+        width: 100%;
+      }
+      h1 {
+        font-size: 2.5rem;
+
+        @media screen and (max-width: 450px) {
+          font-size: 2rem;
+          padding: 1rem;
+          width: 100%;
+        }
+      }
+
+      p {
+        max-width: 80%;
+        line-height: 1.75;
+
+        @media screen and (max-width: 450px) {
+          width: 100%;
+          padding: 1rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          width: 100%;
+          padding: 0.5rem;
+          margin: auto;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          width: 100%;
+          text-align: center;
+          padding: 0 4rem 0 4rem;
+        }
+      }
     }
 
     .team {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      align-content: center;
       grid-gap: 4rem;
       margin-top: 4rem;
+
+      @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+      }
 
       .teamMember {
         width: 300px;
         height: 600px;
-        overflow: hidden;
         cursor: pointer;
         transition: 0.4s all ease-in-out;
 
@@ -51,11 +110,30 @@
       justify-content: center;
       margin: auto;
       margin-top: 8rem;
-      max-width: 1400px;
       padding-left: 10rem;
 
+      @media screen and (max-width: 450px) {
+        flex-direction: column;
+        padding: 0.9rem;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        flex-direction: column;
+        padding: 0.5rem;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        padding-left: 2rem;
+      }
+
       .dog {
-        flex: 0.5;
+        @media screen and (max-width: 450px) {
+          margin-bottom: 6rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          margin-bottom: 6rem;
+        }
 
         .dogImage {
           width: 420px;
@@ -63,6 +141,19 @@
           border-radius: 20px;
           overflow: hidden;
           transition: 0.3s all ease-in-out;
+
+          @media screen and (max-width: 450px) {
+            width: 360px;
+          }
+
+          @media screen and (min-width: 451px) and (max-width: 768px) {
+            width: 500px;
+          }
+
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            max-width: 360px;
+            max-height: 280px;
+          }
         }
 
         .dogImage:hover {
@@ -80,6 +171,19 @@
 
         p {
           width: 70%;
+          line-height: 1.65;
+
+          @media screen and (max-width: 450px) {
+            width: 100%;
+          }
+
+          @media screen and (min-width: 451px) and (max-width: 768px) {
+            width: 100%;
+          }
+
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            width: 90%;
+          }
         }
       }
     }

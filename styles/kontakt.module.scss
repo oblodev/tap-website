@@ -5,24 +5,80 @@
     display: flex;
     margin-top: 4rem;
 
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+      flex-direction: column;
+    }
+
     .kontaktText {
       flex: 0.5;
       padding-left: 4rem;
 
+      @media screen and (max-width: 450px) {
+        padding-left: 1rem;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        padding-left: 1.5rem;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        padding-left: 2rem;
+      }
+
       h1 {
         font-size: 2.75rem;
+
+        @media screen and (max-width: 450px) {
+          font-size: 2.25rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          font-size: 2.5rem;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          font-size: 2.5rem;
+        }
       }
 
       h2 {
         font-size: 1.25rem;
         width: 80%;
         margin-top: 3rem;
+
+        @media screen and (max-width: 450px) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          width: 90%;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          width: 95%;
+        }
       }
 
       p {
         width: 85%;
         margin-top: 2.5rem;
         line-height: 1.75;
+
+        @media screen and (max-width: 450px) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          width: 90%;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          width: 95%;
+        }
       }
     }
 
@@ -36,6 +92,24 @@
         width: 66%;
         margin-left: 4rem;
         margin-top: 2rem;
+
+        @media screen and (max-width: 450px) {
+          width: 88%;
+          margin: auto;
+          margin-top: 4rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          width: 88%;
+          margin: auto;
+          margin-top: 4rem;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          width: 88%;
+          margin: auto;
+          margin-top: 4rem;
+        }
 
         .kontaktInputs {
           display: flex;
@@ -69,6 +143,27 @@
             color: #04436f;
             font-size: 0.95rem;
             cursor: pointer;
+            width: 100%;
+
+            @media screen and (max-width: 450px) {
+              padding: 0.5rem 4rem 0.5rem 4rem;
+              width: 100%;
+            }
+
+            @media screen and (min-width: 451px) and (max-width: 768px) {
+              padding: 0.5rem 4rem 0.5rem 4rem;
+              width: 100%;
+            }
+
+            @media only screen and (min-width: 769px) and (max-width: 992px) {
+              padding: 0.5rem 4rem 0.5rem 4rem;
+              width: 100%;
+            }
+
+            @media only screen and (min-width: 993px) and (max-width: 1200px) {
+              padding: 0.5rem 4rem 0.5rem 4rem;
+              width: 100%;
+            }
           }
         }
       }
@@ -80,5 +175,9 @@
     margin-bottom: 12rem;
     text-align: center;
     font-size: 4rem;
+
+    @media screen and (max-width: 450px) {
+      font-size: 3rem;
+    }
   }
 }
