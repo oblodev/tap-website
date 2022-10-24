@@ -7,19 +7,29 @@ import InfoHeroLeft from "../components/InfoHeroLeft";
 import InfoHeroHigh from "../components/InfoHeroHigh";
 import Block from "../components/Block";
 
+import { motion } from "framer-motion";
+
 function leistungen() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.header}>
+        <motion.div
+          className={styles.header}
+          whileInView={{ y: [60, 0] }}
+          transition={{ duration: 1 }}
+        >
           <h1>Unsere Leistungen</h1>
           <p>
             Wir erfüllen auch anspruchsvollste Anforderungen mit einem Angebot
             zahlreicher Serviceleistungen. Ihre Zufriedenheit hat für uns stets
             höchste Priorität.
           </p>
-        </div>
-        <div className={styles.cards}>
+        </motion.div>
+        <motion.div
+          className={styles.cards}
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+        >
           <div className={styles.card}>
             <Image src={bully} />
             <div className={styles.heading}>
@@ -56,7 +66,7 @@ function leistungen() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
         <InfoHeroRight />
         <InfoHeroLeft />
         <InfoHeroHigh />

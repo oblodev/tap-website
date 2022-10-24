@@ -2,10 +2,17 @@ import styles from "../styles/MopsInfoRight.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 function MopsInfoRight() {
   return (
     <div className={styles.infoContainer}>
-      <div className={styles.infoWrapper} id="augen">
+      <motion.div
+        className={styles.infoWrapper}
+        id="augen"
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <div className={styles.infoText}>
           <h3>Augenprobleme</h3>
           <h4>
@@ -35,7 +42,7 @@ function MopsInfoRight() {
             objectFit="cover"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function Hero() {
         <motion.div
           className={styles.heroHeader}
           whileInView={{ y: [80, 0], opacity: [0, 1] }}
-          transition={{ duration: 1.15 }}
+          transition={{ duration: 1 }}
         >
           <h1>
             Tierarztpraxis Quehenberger Dr. Bully<span>®</span>

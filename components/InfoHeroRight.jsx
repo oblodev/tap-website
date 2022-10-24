@@ -3,10 +3,16 @@ import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
 function InfoHeroRight() {
   return (
     <div className={styles.infoContainer}>
-      <div className={styles.infoWrapper}>
+      <motion.div
+        className={styles.infoWrapper}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <div className={styles.infoText}>
           <h3>Atemwegserkrankungen</h3>
           <p>
@@ -26,7 +32,7 @@ function InfoHeroRight() {
             objectFit="cover"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -2,10 +2,16 @@ import styles from "../styles/InfoHeroLeft.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 function InfoHeroLeft() {
   return (
     <div className={styles.infoContainer}>
-      <div className={styles.infoWrapper}>
+      <motion.div
+        className={styles.infoWrapper}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <div className={styles.infoImage}>
           <Image
             src={pug}
@@ -29,7 +35,7 @@ function InfoHeroLeft() {
             vor Ort.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

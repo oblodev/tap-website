@@ -1,11 +1,16 @@
 import styles from "../styles/Aktuelles.module.scss";
 import Image from "next/image";
 import pug from "../public/images/pug.jpg";
+import { motion } from "framer-motion";
 
 function Aktuelles() {
   return (
     <div className={styles.aktContainer}>
-      <div className={styles.aktWrapper}>
+      <motion.div
+        className={styles.aktWrapper}
+        whileInView={{ y: -60, opacity: [0, 1] }}
+        transition={{ duration: 0.8 }}
+      >
         <h2>Aktuelles</h2>
         <div className={styles.aktLinks}>
           <div className={styles.aktLink}>
@@ -63,7 +68,7 @@ function Aktuelles() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

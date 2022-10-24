@@ -2,11 +2,16 @@ import styles from "../styles/InfoHero.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function InfoHero() {
   return (
     <div className={styles.heroInfoContainer}>
-      <div className={styles.heroInfoWrapper}>
+      <motion.div
+        className={styles.heroInfoWrapper}
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.95 }}
+      >
         <div className={styles.heroInfoImage}>
           <Image src={pug} alt="mops-foto" />
         </div>
@@ -28,7 +33,7 @@ function InfoHero() {
             <button className={styles.heroInfoBtn}>Mehr erfahren </button>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

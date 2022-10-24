@@ -1,10 +1,16 @@
 import styles from "../styles/Fragen.module.scss";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
 function Fragen() {
   return (
     <div className={styles.fragenContainer}>
-      <div className={styles.fragenWrapper}>
+      <motion.div
+        className={styles.fragenWrapper}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <div className={styles.fragenHeader}>
           <h2>
             Haben Sie Fragen zu unserem Angebot, oder möchten Sie einen Termin
@@ -21,7 +27,7 @@ function Fragen() {
             <button className={styles.fragenBtn}>Kontakt</button>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

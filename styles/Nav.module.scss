@@ -68,6 +68,7 @@
       font-size: 1.75rem;
       margin-right: 1rem;
       color: #04436f;
+      position: relative;
 
       @media screen and (max-width: 450px) {
         display: block;
@@ -75,6 +76,55 @@
 
       @media screen and (min-width: 451px) and (max-width: 768px) {
         display: block;
+      }
+
+      div {
+        position: fixed !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        z-index: 101;
+        padding: 1rem;
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        background-color: #04436f !important;
+        color: #fff;
+
+        ul {
+          list-style: none;
+
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          li {
+            margin: 1rem;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 1.2rem;
+
+              font-weight: 500;
+
+              transition: all 0.36s ease-in-out;
+
+              &:hover {
+                color: yellow;
+              }
+            }
+          }
+        }
       }
     }
   }

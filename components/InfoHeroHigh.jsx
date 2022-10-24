@@ -2,10 +2,16 @@ import Image from "next/image";
 import styles from "../styles/InfoHeroHigh.module.scss";
 import dent from "../public/images/dent.jpg";
 
+import { motion } from "framer-motion";
+
 function InfoHeroHigh() {
   return (
     <div className={styles.infoContainer}>
-      <div className={styles.infoWrapper}>
+      <motion.div
+        className={styles.infoWrapper}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <div className={styles.infoText}>
           <h3>Zahnmedizin</h3>
           <p>
@@ -36,7 +42,7 @@ function InfoHeroHigh() {
             objectFit="cover"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

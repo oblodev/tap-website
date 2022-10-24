@@ -1,9 +1,15 @@
 import styles from "../styles/kontakt.module.scss";
 
+import { motion } from "framer-motion";
+
 function kontakt() {
   return (
     <div className={styles.container}>
-      <div className={styles.wrapper}>
+      <motion.div
+        className={styles.wrapper}
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <div className={styles.kontaktText}>
           <h1>Ihr Kontakt zu uns</h1>
           <h2>
@@ -37,7 +43,7 @@ function kontakt() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.google}>
         <h2>GOOGLE MAPS</h2>
       </div>

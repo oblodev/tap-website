@@ -2,10 +2,17 @@ import styles from "../styles/MopsInfoLeftSec.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 function MopsInfoLeftSec() {
   return (
     <div className={styles.infoContainer}>
-      <div className={styles.infoWrapper} id="magen">
+      <motion.div
+        className={styles.infoWrapper}
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+        id="magen"
+      >
         <div className={styles.infoImage}>
           <Image
             src={pug}
@@ -35,7 +42,7 @@ function MopsInfoLeftSec() {
             ebenfalls bei uns durchgeführt werden.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

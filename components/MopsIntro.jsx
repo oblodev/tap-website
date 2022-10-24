@@ -3,11 +3,17 @@ import { AiOutlineMedicineBox } from "react-icons/ai";
 import { MdOutlineSick } from "react-icons/md";
 import { GiSittingDog } from "react-icons/gi";
 
+import { motion } from "framer-motion";
+
 function MopsIntro() {
   return (
     <div className={styles.mopsIntroContainer}>
       <div className={styles.mopsIntroWrapper}>
-        <div className={styles.mopsIntroInfo}>
+        <motion.div
+          className={styles.mopsIntroInfo}
+          whileInView={{ x: [-120, 0] }}
+          transition={{ duration: 1 }}
+        >
           <div className={styles.mopsIntroIcon}>
             <MdOutlineSick />
           </div>
@@ -18,8 +24,12 @@ function MopsIntro() {
               enstanden. Diese betreffen vor allem Atmung, Haut und Wirbelsäule
             </p>
           </div>
-        </div>
-        <div className={styles.mopsIntroInfo}>
+        </motion.div>
+        <motion.div
+          className={styles.mopsIntroInfo}
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 1.25 }}
+        >
           <div className={styles.mopsIntroIcon}>
             <AiOutlineMedicineBox />
           </div>
@@ -30,9 +40,13 @@ function MopsIntro() {
               unvorhergesehen auf Medikamente.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={styles.mopsIntroInfo}>
+        <motion.div
+          className={styles.mopsIntroInfo}
+          whileInView={{ x: [120, 0] }}
+          transition={{ duration: 1 }}
+        >
           <div className={styles.mopsIntroIcon}>
             <GiSittingDog />
           </div>
@@ -44,7 +58,7 @@ function MopsIntro() {
               auch beim Tierarzt muss darauf Rücksicht genommmen werden.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

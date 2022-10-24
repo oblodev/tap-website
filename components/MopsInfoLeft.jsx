@@ -2,10 +2,17 @@ import styles from "../styles/MopsInfoLeft.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 function MopsInfoLeft() {
   return (
     <div className={styles.infoContainer}>
-      <div className={styles.infoWrapper} id="atem">
+      <motion.div
+        className={styles.infoWrapper}
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+        id="atem"
+      >
         <div className={styles.infoImage}>
           <Image
             src={pug}
@@ -39,7 +46,7 @@ function MopsInfoLeft() {
             Einschränkungen{" "}
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

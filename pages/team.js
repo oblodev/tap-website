@@ -5,11 +5,17 @@ import team1 from "../public/images/Dr.jpg";
 import nils from "../public/images/nils.jpg";
 import diego from "../public/images/diego.jpg";
 
+import { motion } from "framer-motion";
+
 function team() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.header}>
+        <motion.div
+          className={styles.header}
+          whileInView={{ y: [80, 0], opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+        >
           <h1>Unser Praxis-Team</h1>
           <p className={styles.wrapperText}>
             Unser Team besteht aus hervorragend ausgebildeten und motivierten
@@ -19,9 +25,13 @@ function team() {
             umfangreichen, erstklassigen Service für unsere vierbeinigen
             Patienten anbieten.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.team}>
+        <motion.div
+          className={styles.team}
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+        >
           <div className={styles.teamMember}>
             <Image src={team1} />
 
@@ -65,7 +75,7 @@ function team() {
               <p>Position</p>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className={styles.dogMember}>
           <div className={styles.dog}>
             <div className={styles.dogImage}>

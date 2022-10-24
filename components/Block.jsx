@@ -3,11 +3,16 @@ import Image from "next/image";
 import logoWeiss from "../public/images/weiss.png";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 function Block() {
   return (
     <div className={styles.blockContainer}>
-      <div className={styles.blockWrapper}>
+      <motion.div
+        className={styles.blockWrapper}
+        whileInView={{ y: -60, opacity: [0, 1] }}
+        transition={{ duration: 0.8 }}
+      >
         <div className={styles.blockHeader}>
           <h3>Termine nach telefonischer Vereinbarung:</h3>
           <p className={styles.blockTel}>
@@ -23,7 +28,7 @@ function Block() {
         <div className={styles.blockLogo}>
           <Image src={logoWeiss} width="420px" height="280px" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
