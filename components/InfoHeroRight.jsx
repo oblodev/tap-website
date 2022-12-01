@@ -1,4 +1,5 @@
 import styles from "../styles/InfoHeroRight.module.scss";
+import nase from "../public/images/Nase.jpg";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +27,7 @@ function InfoHeroRight() {
         </div>
         <div className={styles.infoImage}>
           <Image
-            src={pug}
+            src={nase}
             alt="info-foto"
             layout="responsive"
             objectFit="cover"

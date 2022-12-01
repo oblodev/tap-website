@@ -1,6 +1,5 @@
 import styles from "../styles/leistungen.module.scss";
 import Image from "next/image";
-
 import bully from "../public/images/pug.jpg";
 import InfoHeroRight from "../components/InfoHeroRight";
 import InfoHeroLeft from "../components/InfoHeroLeft";

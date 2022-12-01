@@ -2,7 +2,7 @@ import Image from "next/image";
 import Fragen from "../components/Fragen";
 import styles from "../styles/team.module.scss";
 import team1 from "../public/images/Dr.jpg";
-import nils from "../public/images/nils.jpg";
+import nils from "../public/images/doggy.jpg";
 import diego from "../public/images/diego.jpg";
 
 import { motion } from "framer-motion";

@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
+import kast from "../public/images/kast.jpg";
+
 function InfoHeroLeft() {
   return (
     <div className={styles.infoContainer}>
@@ -14,7 +16,7 @@ function InfoHeroLeft() {
       >
         <div className={styles.infoImage}>
           <Image
-            src={pug}
+            src={kast}
             alt="info-foto"
             layout="responsive"
             objectFit="cover"
