@@ -1,6 +1,7 @@
 import styles from "../styles/kontakt.module.scss";
 
 import { motion } from "framer-motion";
+import TeamImage from "../components/TeamImage";
 
 function kontakt() {
   return (
@@ -44,6 +45,7 @@ function kontakt() {
           </div>
         </div>
       </motion.div>
+      <TeamImage />
       <div className={styles.google}>
         <h2>GOOGLE MAPS</h2>
       </div>
