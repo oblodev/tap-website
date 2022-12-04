@@ -32,7 +32,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 4rem;
+      margin-left: 2rem;
       transition: 0.2s all ease-in-out;
       box-shadow: 16px 16px #04436f;
       -moz-box-shadow: 16px 16px #04436f;
@@ -69,7 +69,7 @@
     .heroInfoText {
       display: flex;
       flex-direction: column;
-      padding: 4rem 6rem;
+      padding: 2rem 2rem 2rem 4rem;
 
       @media screen and (max-width: 450px) {
         padding: 2rem;

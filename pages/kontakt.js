@@ -25,6 +25,9 @@ function kontakt() {
             oder Sie besuchen uns nach Terminvereinbarung direkt vor Ort – wir
             freuen uns auf Sie!
           </p>
+          <p>
+            Termine nach telefonischer Vereinbarung: <b>+43 2252 26 60 37</b>
+          </p>
         </div>
         <div className={styles.kontaktForm}>
           <div className={styles.kontaktCard}>

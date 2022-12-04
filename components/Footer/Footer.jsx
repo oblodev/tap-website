@@ -34,11 +34,15 @@ function Footer() {
             <li>
               <Link href="/mopsundco">Mops & Co.</Link>
             </li>
-            <li>Komplexlappentechnik</li>
+            <li>
+              <Link href="/komplexlappentechnik">Komplexlappentechnik</Link>
+            </li>
           </ul>
           <ul>
             <li>Datenschutz</li>
-            <li>Impressum</li>
+            <li>
+              <Link href="/impressum">Impressum</Link>
+            </li>
           </ul>
           <ul>
             <li>

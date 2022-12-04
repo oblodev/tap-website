@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import InfoHero from "../components/InfoHero";
 import Aktuelles from "../components/Aktuelles";
 import Block from "../components/Block";
+import Frame from "../components/Frame";
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
       </Head>
       <Hero />
       <InfoHero />
+      <Frame />
       <Aktuelles />
+
       <Block />
     </div>
   );

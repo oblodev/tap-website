@@ -5,6 +5,7 @@ import InfoHeroRight from "../components/InfoHeroRight";
 import InfoHeroLeft from "../components/InfoHeroLeft";
 import InfoHeroHigh from "../components/InfoHeroHigh";
 import Block from "../components/Block";
+import KomplexLappen from "../components/KomplexLappen";
 
 import { motion } from "framer-motion";
 
@@ -53,6 +54,7 @@ function leistungen() {
               </p>
             </div>
           </div>
+
           <div className={styles.card}>
             <Image src={bully} />
             <div className={styles.heading}>
@@ -66,6 +68,7 @@ function leistungen() {
             </div>
           </div>
         </motion.div>
+        <KomplexLappen />
         <InfoHeroRight />
         <InfoHeroLeft />
         <InfoHeroHigh />
