@@ -20,7 +20,6 @@ export default function Home() {
       <InfoHero />
       <Frame />
       <Aktuelles />
-
       <Block />
     </div>
   );

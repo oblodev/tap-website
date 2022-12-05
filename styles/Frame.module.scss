@@ -2,9 +2,33 @@
   position: absolute;
 
   z-index: 1000;
-  padding: 1rem;
-  background-color: #eeeaea;
+  padding: 0rem 1rem 1rem 1rem;
+  background-color: #04436f;
   border: 1px solid #04436f;
   margin-left: 0.5rem;
   margin-top: 8rem;
+
+  .x {
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+}
+
+.frameContainer {
+  position: absolute;
+  background-color: #04436f;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 2.1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #085e9c;
+  }
 }
