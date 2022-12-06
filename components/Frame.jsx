@@ -12,7 +12,7 @@ function Frame() {
       {toggleSide && (
         <motion.div
           className={styles.frame}
-          whileInView={{ x: [-300, 0], opacity: [0, 1] }}
+          whileInView={{ x: [-300, 0] }}
           transition={{ delay: 0 }}
         >
           <div className={styles.x}>
@@ -20,9 +20,9 @@ function Frame() {
           </div>
           <div className={styles.framer}>
             <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FDoktorBully%2F&tabs=timeline&width=500&height=580&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-              width={500}
-              height={580}
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FDoktorBully%2F&tabs=timeline&width=364&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width={364}
+              height={500}
               scrolling="no"
               frameborder="0"
               allowfullscreen="true"
@@ -34,7 +34,7 @@ function Frame() {
       {!toggleSide && (
         <motion.div
           className={styles.frameContainer}
-          whileInView={{ x: [-60, 0], opacity: [0, 1] }}
+          whileInView={{ x: [-60, 0] }}
           transition={{ delay: 0 }}
           onClick={() => setToggleSide(true)}
         >

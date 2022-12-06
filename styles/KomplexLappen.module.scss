@@ -3,15 +3,40 @@
   margin: 0 auto;
   margin-top: 8rem;
 
+  @media screen and (max-width: 450px) {
+    max-width: 440px;
+    margin-top: 6rem;
+    padding: 1.5rem;
+  }
+
+  @media screen and (max-width: 1079px) and (min-width: 451px) {
+    max-width: 990px;
+
+    padding: 2rem;
+  }
+
   .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #04436f;
     width: 100%;
-    border-radius: 16px;
     color: #fff;
     gap: 6rem;
+    border-radius: 12px;
+    box-shadow: 8px 8px 5px #ccc;
+    -moz-box-shadow: 8px 8px 5px #ccc;
+    -webkit-box-shadow: 8px 8px 5px #ccc;
+    -khtml-box-shadow: 8px 8px 5px #ccc;
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 1079px) and (min-width: 451px) {
+      font-size: 1.75rem;
+      margin-top: 1rem;
+    }
 
     .header {
       display: flex;
@@ -23,18 +48,23 @@
         margin-top: -2rem;
 
         @media screen and (max-width: 450px) {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
+          margin-top: 4rem;
         }
 
         @media screen and (max-width: 1079px) and (min-width: 451px) {
           font-size: 1.75rem;
-          margin-top: 1rem;
+          margin-top: 1.5rem;
         }
       }
 
       p {
         text-align: center;
         font-size: 1.1rem;
+
+        @media screen and (max-width: 450px) {
+          font-size: 0.9rem;
+        }
       }
     }
 
@@ -45,6 +75,10 @@
       height: 100%;
       margin-bottom: 4rem;
 
+      @media screen and (max-width: 450px) {
+        flex-direction: column-reverse;
+      }
+
       button {
         padding: 0.75rem 4rem;
         background-color: #fff;
@@ -54,6 +88,10 @@
         cursor: pointer;
         transition: 0.2s all ease-in;
         font-weight: 600;
+
+        @media screen and (max-width: 450px) {
+          padding: 0.75rem 3rem;
+        }
       }
 
       button:hover {
@@ -64,6 +102,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 450px) {
+          margin-top: -1rem;
+        }
       }
     }
   }
