@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 function team({ data }) {
-  console.log(data);
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>

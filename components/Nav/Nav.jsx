@@ -21,7 +21,12 @@ function Nav() {
         <div className={styles.navLinks}>
           <ul>
             <li>
-              <Link href="/leistungen">Leistungen</Link>{" "}
+              <div className={styles.dropdown}>
+                <Link href="/leistungen">Leistungen</Link>{" "}
+                <div className={styles.dropdownContent}>
+                  <Link href="/komplexlappentechnik">Komplexlappentechnik</Link>
+                </div>
+              </div>
             </li>
             <li>
               <Link href="/team">Team</Link>
