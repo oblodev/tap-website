@@ -8,7 +8,10 @@ import Aktuelles from "../components/Aktuelles";
 import Block from "../components/Block";
 import Frame from "../components/Frame";
 
-export default function Home() {
+import { getTeamMember } from "../services";
+
+export default function Home({ data }) {
+  console.log(data);
   return (
     <div className={styles.container}>
       <Head>
@@ -23,4 +26,14 @@ export default function Home() {
       <Block />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const data = (await getTeamMember()) || [];
+
+  return {
+    props: {
+      data,
+    },
+  };
 }

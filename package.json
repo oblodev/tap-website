@@ -1,6 +1,6 @@
 {
   "name": "tap-website",
-  "version": "0.6.5",
+  "version": "0.8.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^7.5.3",
+    "graphql-request": "^5.0.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

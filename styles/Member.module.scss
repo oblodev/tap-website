@@ -1,3 +1,60 @@
 .container {
   max-width: 1400px;
+  margin: auto;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 6rem;
+    max-width: 1280px;
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column-reverse;
+      padding: 1rem;
+    }
+
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+      flex-direction: column-reverse;
+      padding: 1rem;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      padding: 1rem;
+    }
+
+    .infoImage {
+      flex: 5;
+      overflow: hidden;
+      max-height: 800px;
+    }
+
+    .info {
+      flex: 5;
+
+      .header {
+        margin-bottom: 3.5rem;
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: 1.15rem;
+          color: rgb(110, 108, 108);
+        }
+      }
+
+      .infoBtn {
+        background-color: #fff;
+        color: #000;
+        font-size: 0.85rem;
+        padding: 0.25rem 0.75rem;
+        border: 1px solid rgb(116, 116, 116);
+        cursor: pointer;
+        margin-top: 4rem;
+      }
+    }
+  }
 }

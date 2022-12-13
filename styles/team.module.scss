@@ -95,11 +95,15 @@
           p {
             width: 100%;
           }
+
+          .bold {
+            font-weight: 700;
+          }
         }
       }
 
       .teamMember:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
     .dogMember {

@@ -5,18 +5,28 @@ import team1 from "../public/images/Dr.jpg";
 import nils from "../public/images/doggy.jpg";
 import diego from "../public/images/diego.jpg";
 
+import { getTeamMember } from "../services";
+
 import { motion } from "framer-motion";
 
-function team() {
+import Link from "next/link";
+
+function team({ data }) {
+  console.log(data);
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <motion.div
           className={styles.header}
-          whileInView={{ y: [80, 0], opacity: [0, 1] }}
+          whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
         >
-          <h1>Unser Praxis-Team</h1>
+          <motion.div
+            whileInView={{ y: [80, 0], opacity: [0, 1] }}
+            transition={{ duration: 1 }}
+          >
+            <h1>Unser Praxis-Team</h1>
+          </motion.div>
           <p className={styles.wrapperText}>
             Unser Team besteht aus hervorragend ausgebildeten und motivierten
             Mitarbeitern, die nicht nur absolute Experten auf ihrem Gebiet sind
@@ -32,49 +42,23 @@ function team() {
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
         >
-          <div className={styles.teamMember}>
-            <Image src={team1} />
-
-            <div className={styles.teamMemberInfo}>
-              <p>Name</p>
-              <p>Position</p>
-            </div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image src={team1} />
-            <div className={styles.teamMemberInfo}>
-              <p>Name</p>
-              <p>Position</p>
-            </div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image src={team1} />
-            <div className={styles.teamMemberInfo}>
-              <p>Name</p>
-              <p>Position</p>
-            </div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image src={team1} />
-            <div className={styles.teamMemberInfo}>
-              <p>Name</p>
-              <p>Position</p>
-            </div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image src={team1} />
-            <div className={styles.teamMemberInfo}>
-              <p>Name</p>
-              <p>Position</p>
-            </div>
-          </div>
-          <div className={styles.teamMember}>
-            <Image src={team1} />
-            <div className={styles.teamMemberInfo}>
-              <p>Name</p>
-              <p>Position</p>
-            </div>
-          </div>
+          {data &&
+            data.map((member) => (
+              <Link href={`/unserteam/${member.node.name}`} key={member.id}>
+                <div className={styles.teamMember}>
+                  <Image
+                    src={member.node.foto.url}
+                    alt="member-foto"
+                    width={320}
+                    height={460}
+                  />
+                  <div className={styles.teamMemberInfo}>
+                    <p className={styles.bold}>{member.node.name}</p>
+                    <p>{member.node.position}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
         </motion.div>
         <div className={styles.dogMember}>
           <div className={styles.dog}>
@@ -133,3 +117,13 @@ function team() {
 }
 
 export default team;
+
+export async function getStaticProps() {
+  const data = (await getTeamMember()) || [];
+
+  return {
+    props: {
+      data,
+    },
+  };
+}

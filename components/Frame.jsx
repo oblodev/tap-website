@@ -20,8 +20,8 @@ function Frame() {
           </div>
           <div className={styles.framer}>
             <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FDoktorBully%2F&tabs=timeline&width=364&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-              width={364}
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FDoktorBully%2F&tabs=timeline&width=360&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width={360}
               height={500}
               scrolling="no"
               frameborder="0"
