@@ -6,6 +6,7 @@ import weiss from "../public/images/weiss.png";
 import MopsInfoLeft from "../components/MopsInfoLeft";
 import MopsInfoRight from "../components/MopsInfoRight";
 import MopsInfoLeftSec from "../components/MopsInfoLeftSec";
+import KomplexLappen from "../components/KomplexLappen";
 import Link from "next/link";
 
 function mopsundco() {
@@ -31,7 +32,9 @@ function mopsundco() {
             </ul>
           </div>
         </div>
+
         <MopsIntro />
+        <KomplexLappen />
         <MopsInfoLeft />
         <MopsInfoRight />
         <MopsInfoLeftSec />

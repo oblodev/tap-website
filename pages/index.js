@@ -9,9 +9,10 @@ import Block from "../components/Block";
 import Frame from "../components/Frame";
 
 import { getTeamMember } from "../services";
+import { getBlogPost } from "../services/blogService";
 
-export default function Home({ data }) {
-  console.log(data);
+export default function Home({ posts }) {
+  console.log(posts);
   return (
     <div className={styles.container}>
       <Head>
@@ -22,7 +23,7 @@ export default function Home({ data }) {
       <Hero />
       <InfoHero />
       <Frame />
-      <Aktuelles />
+      <Aktuelles posts={posts} />
       <Block />
     </div>
   );
@@ -30,10 +31,12 @@ export default function Home({ data }) {
 
 export async function getStaticProps() {
   const data = (await getTeamMember()) || [];
+  const posts = (await getBlogPost()) || [];
 
   return {
     props: {
       data,
+      posts,
     },
   };
 }

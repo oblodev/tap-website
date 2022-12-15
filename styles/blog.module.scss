@@ -1,0 +1,58 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    .blogHeader {
+      h2 {
+        font-size: 2.1rem;
+      }
+    }
+
+    .blogPosts {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      margin-top: 5rem;
+
+      .blogPost {
+        cursor: pointer;
+        transition: 0.2s all ease-in-out;
+
+        .blogPostTitle {
+          h3 {
+            font-size: 1.15rem;
+            margin-top: 0.45rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        .blogPostCreator {
+          p {
+            font-size: 0.9rem;
+          }
+        }
+
+        .blogMehr {
+          button {
+            padding: 0.35rem 0.75rem;
+            color: #04436f;
+            background-color: #fff;
+            border: 1px solid #04436f;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+
+      .blogPost:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

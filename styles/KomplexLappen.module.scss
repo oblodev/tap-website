@@ -4,14 +4,14 @@
   margin-top: 8rem;
 
   @media screen and (max-width: 450px) {
-    width: 420px;
+    max-width: 420px;
     margin-top: 6rem;
     padding: 1.5rem;
     margin-left: 0;
   }
 
   @media screen and (max-width: 1079px) and (min-width: 451px) {
-    max-width: 990px;
+    width: 100%;
 
     padding: 2rem 2rem 2rem 1rem;
   }
@@ -34,9 +34,9 @@
       flex-direction: column;
     }
 
-    @media screen and (max-width: 1079px) and (min-width: 451px) {
-      font-size: 1.75rem;
-      margin-top: 1rem;
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+      flex-direction: column;
+      padding: 1rem;
     }
 
     .header {
@@ -106,6 +106,10 @@
 
         @media screen and (max-width: 450px) {
           margin-top: -1rem;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+          margin-top: -3rem;
         }
       }
     }

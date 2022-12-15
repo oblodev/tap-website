@@ -14,12 +14,6 @@ function Footer() {
             <h2>Tierarztpraxis Quehenberger</h2>
             <Image src={bully} width="66px" height="40px" />
           </div>
-
-          <p>
-            Termine nach telefonischer Vereinbarung:{" "}
-            <span>+43 2252 26 60 37</span>
-          </p>
-          <p>office@tierarztpraxis-quehenberger.at</p>
         </div>
         <div className={styles.footerLinks}>
           <ul>
@@ -45,6 +39,9 @@ function Footer() {
             </li>
           </ul>
           <ul>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
             <li>
               <Link href="/kontakt">Kontakt</Link>
             </li>
