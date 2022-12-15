@@ -15,7 +15,7 @@ function blog({ posts }) {
         <div className={styles.blogPosts}>
           {posts &&
             posts.map((post) => (
-              <Link href={`/blogpost/${post.node.urlName}`}>
+              <Link href={`/blogpost/${post.node.urlName}`} key={post.node.id}>
                 <div className={styles.blogPost}>
                   <div className={styles.blogPostImg}>
                     <Image src={post.node.foto.url} width={400} height={240} />

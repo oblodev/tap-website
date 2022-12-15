@@ -20,7 +20,10 @@ function Aktuelles({ posts }) {
               .slice(-6)
               .reverse()
               .map((post) => (
-                <Link href={`/blogpost/${post.node.urlName}`}>
+                <Link
+                  href={`/blogpost/${post.node.urlName}`}
+                  key={post.node.id}
+                >
                   <div className={styles.aktLink}>
                     <div className={styles.aktLinkImage}>
                       <Image
