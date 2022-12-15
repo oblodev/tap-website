@@ -58,8 +58,8 @@ function komplexlappentechnik() {
             <p>
               Hier kommt jetzt die Komplexlappentechnik zum Einsatz! Diese
               Operationstechnik bietet zwei entscheidende Vorteile. Erstens ist
-              ein "Nachwachsen" - richtigerweise handelt es sich dabei um
-              Narbenwucherungen - technisch bedingt nicht möglich ist. Diese
+              ein &quot;Nachwachsen&quot; - richtigerweise handelt es sich dabei
+              um Narbenwucherungen - technisch bedingt nicht möglich ist. Diese
               Komplikation tritt oft bei anderen Opertionstechniken nach Monaten
               oder Jahren auf. Sie kann so gravierend sein, dass der
               Gesundheitszustand sogar schlechter als vor dem Eingriff sein
