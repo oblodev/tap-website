@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/InfoHeroHigh.module.scss";
 import dent from "../public/images/dent.jpg";
+import bulldog from "../public/images/bulldog.jpg";
 
 import { motion } from "framer-motion";
 
@@ -36,7 +37,7 @@ function InfoHeroHigh() {
         </div>
         <div className={styles.infoImage}>
           <Image
-            src={dent}
+            src={bulldog}
             alt="info-foto"
             layout="responsive"
             objectFit="cover"

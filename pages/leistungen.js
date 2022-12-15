@@ -9,6 +9,11 @@ import KomplexLappen from "../components/KomplexLappen";
 
 import { motion } from "framer-motion";
 
+import img1 from "../public/images/img1.jpg";
+import img2 from "../public/images/img2.jpg";
+import img3 from "../public/images/img3.jpg";
+import intern from "../public/images/intern.jpg";
+
 function leistungen() {
   return (
     <div className={styles.container}>
@@ -31,7 +36,7 @@ function leistungen() {
           transition={{ duration: 1 }}
         >
           <div className={styles.card}>
-            <Image src={bully} />
+            <Image src={img2} />
             <div className={styles.heading}>
               <h2>Diagnostik</h2>
               <p>
@@ -43,7 +48,7 @@ function leistungen() {
             </div>
           </div>
           <div className={styles.card}>
-            <Image src={bully} />
+            <Image src={img1} />
             <div className={styles.heading}>
               <h2>Chirurgie</h2>
               <p>
@@ -56,7 +61,7 @@ function leistungen() {
           </div>
 
           <div className={styles.card}>
-            <Image src={bully} />
+            <Image src={intern} />
             <div className={styles.heading}>
               <h2>Interne Medizin</h2>
               <p>

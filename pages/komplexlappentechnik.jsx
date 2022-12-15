@@ -10,7 +10,7 @@ function komplexlappentechnik() {
           <p>Einzigartig auf dem Gebiet der Atemwegschirurgie</p>
         </div>
         <div className={styles.heroes}>
-          <h2>Komplexlappetechnik-Verlauf</h2>
+          <h2>Komplexlappentechnik-Verlauf</h2>
           <div className={styles.hero}>
             <h3>Voruntersuchung</h3>
             <p>
@@ -51,6 +51,39 @@ function komplexlappentechnik() {
               wird dieses Monitoring durch ein genau auf diese Situation
               vorbereitetes und hoch spezialisiertes OP-Team. Für den Fall einer
               Komplikation muss jeder Handgriff sitzen.
+            </p>
+          </div>
+          <div className={styles.hero}>
+            <h3>Operation</h3>
+            <p>
+              Hier kommt jetzt die Komplexlappentechnik zum Einsatz! Diese
+              Operationstechnik bietet zwei entscheidende Vorteile. Erstens ist
+              ein "Nachwachsen" - richtigerweise handelt es sich dabei um
+              Narbenwucherungen - technisch bedingt nicht möglich ist. Diese
+              Komplikation tritt oft bei anderen Opertionstechniken nach Monaten
+              oder Jahren auf. Sie kann so gravierend sein, dass der
+              Gesundheitszustand sogar schlechter als vor dem Eingriff sein
+              kann. Der zweite Vorteil ist, dass Ihre Knutschkugel sofort nach
+              dem Aufwachen wieder zu Ihnen darf. Schlimme Nachblutungen oder
+              Schwellungen sind nicht möglich. Ja, es ist sogar sehr wichtig,
+              dass Ihr Liebling so rasch als möglich wieder zu Ihnen kommt.
+              Kurzschnauzer sind äußerst sensible Hunde und stecken es oft nicht
+              gut weg, wenn sie von ihren Eltern getrennt sind. Im schlimmsten
+              Fall können sie im Zuge eines stationären Aufenthaltes
+              kollabieren, was dank der Komplexlappentechnik jedoch nicht
+              notwendig ist.
+            </p>
+          </div>
+          <div className={styles.hero}>
+            <h3>Nachsorge</h3>
+            <p>
+              Aufgrund der Operationsmethode ist die Nachsorge sehr einfach. Es
+              ist nicht notwendig sich Urlaub zu nehmen. Gäste aus dem Ausland
+              können am Tag nach der Operation wieder nach Hause fahren,
+              innerhalb von Österreich kann die Heimfahrt gleich nach der
+              Operation angetreten werden. Bereits direkt nach der Operation
+              bekommen unsere Patienten besser Luft und ein unbeschwertes Leben
+              mit guten Atemwegen kann beginnen.
             </p>
           </div>
         </div>
