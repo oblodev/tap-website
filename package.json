@@ -1,6 +1,6 @@
 {
   "name": "tap-website",
-  "version": "0.9.3",
+  "version": "0.9.6",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/maps": "^1.1.3",
     "framer-motion": "^7.5.3",
+    "google-map-react": "^2.2.0",
     "graphql-request": "^5.0.0",
     "moment": "^2.29.4",
     "next": "12.3.1",

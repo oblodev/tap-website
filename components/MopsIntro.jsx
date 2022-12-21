@@ -5,6 +5,7 @@ import { GiSittingDog } from "react-icons/gi";
 
 import { motion } from "framer-motion";
 
+
 function MopsIntro() {
   return (
     <div className={styles.mopsIntroContainer}>
