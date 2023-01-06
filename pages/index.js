@@ -11,6 +11,8 @@ import Frame from "../components/Frame";
 import { getTeamMember } from "../services";
 import { getBlogPost } from "../services/blogService";
 
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+
 export default function Home({ posts }) {
   console.log(posts);
   return (
@@ -25,6 +27,13 @@ export default function Home({ posts }) {
       <Frame />
       <Aktuelles posts={posts} />
       <Block />
+      <FloatingWhatsApp
+        phoneNumber="+43 660 275 08 81"
+        accountName="Tierarztpraxis Quehenberger"
+        chatMessage="Willkommen!"
+        statusMessage="Whatsapp"
+        messageDelay={2}
+      />
     </div>
   );
 }
