@@ -4,6 +4,7 @@ import logoWeiss from "../public/images/weiss.png";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function Block() {
   return (
@@ -16,7 +17,8 @@ function Block() {
         <div className={styles.blockHeader}>
           <h3>Termine nach telefonischer Vereinbarung:</h3>
           <p className={styles.blockTel}>
-            <FiPhoneCall className={styles.blockIcon} /> +43 2252 26 60 37
+            <FiPhoneCall className={styles.blockIcon} />{" "}
+            <Link href="tel:+43 2252 26 60 37">+43 2252 26 60 37</Link>
           </p>
           <p className={styles.blockMail}>
             <HiOutlineMail className={styles.blockIcon} />{" "}

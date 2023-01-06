@@ -30,9 +30,11 @@ export default function Home({ posts }) {
       <FloatingWhatsApp
         phoneNumber="+43 660 275 08 81"
         accountName="Tierarztpraxis Quehenberger"
-        chatMessage="Willkommen!"
+        chatMessage="Willkommen! 
+        Wie können wir ihnen helfen?"
         statusMessage="Whatsapp"
-        messageDelay={2}
+        messageDelay={1.5}
+        notificationDelay={5}
       />
     </div>
   );

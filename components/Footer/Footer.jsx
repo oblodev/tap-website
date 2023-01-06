@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footerWrapper}>
@@ -33,7 +34,9 @@ function Footer() {
             </li>
           </ul>
           <ul>
-            <li>Datenschutz</li>
+            <li>
+              <Link href="/datenschutz">Datenschutz</Link>
+            </li>
             <li>
               <Link href="/impressum">Impressum</Link>
             </li>
@@ -48,7 +51,7 @@ function Footer() {
           </ul>
         </div>
         <div className={styles.footerBottom}>
-          <p>Tierarztpraxis Quehenberger 2022 © </p>
+          <p>Tierarztpraxis Quehenberger {year} © </p>
           <div className={styles.footerIcons}>
             <div className={styles.footerIconFb}>
               <a

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import TeamImage from "../components/TeamImage";
 
 import Google from "../components/Google";
+import Link from "next/link";
 
 function kontakt() {
   return (
@@ -28,7 +29,10 @@ function kontakt() {
             freuen uns auf Sie!
           </p>
           <p>
-            Termine nach telefonischer Vereinbarung: <b>+43 2252 26 60 37</b>
+            Termine nach telefonischer Vereinbarung:{" "}
+            <b>
+              <Link href="tel:+43 2252 26 60 37">+43 2252 26 60 37</Link>
+            </b>
           </p>
         </div>
         <div className={styles.kontaktForm}>
