@@ -12,23 +12,25 @@ import { getTeamMember } from "../services";
 import { getBlogPost } from "../services/blogService";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import PageFeed from "../components/PageFeed";
 
-export default function Home({ posts }) {
-  console.log(posts);
+import faceWA from "../public/images/face.png";
+
+export default function Home() {
+  console.log(faceWA);
   return (
     <div className={styles.container}>
       <Head>
-        <title>Tierpraxis Quehenberger</title>
+        <title>Tierarztpraxis Quehenberger</title>
         <meta name="description" content="Tierpraxis Quehenberger - Webseite" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
       <InfoHero />
-      <Frame />
-      <Aktuelles posts={posts} />
+      <PageFeed />
       <Block />
       <FloatingWhatsApp
-        phoneNumber="+43 660 275 08 81"
+        phoneNumber="+436602750881"
         accountName="Tierarztpraxis Quehenberger"
         chatMessage="Willkommen! 
         Wie können wir ihnen helfen?"
@@ -38,16 +40,4 @@ export default function Home({ posts }) {
       />
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const data = (await getTeamMember()) || [];
-  const posts = (await getBlogPost()) || [];
-
-  return {
-    props: {
-      data,
-      posts,
-    },
-  };
 }

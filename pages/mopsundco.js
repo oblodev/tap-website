@@ -21,13 +21,19 @@ function mopsundco() {
             <h2>Mops & Co.</h2>
             <ul>
               <li>
-                <Link href="#atem"> Atemnot</Link>
+                <Link href="#atem" scroll={false}>
+                  Atemnot
+                </Link>
               </li>
               <li>
-                <Link href="#augen"> Augenprobleme</Link>
+                <Link href="#augen" scroll={false}>
+                  Augenprobleme
+                </Link>
               </li>
               <li>
-                <Link href="#magen"> Magenprobleme</Link>
+                <Link href="#magen" scroll={false}>
+                  Magenprobleme
+                </Link>
               </li>
             </ul>
           </div>

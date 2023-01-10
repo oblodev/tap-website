@@ -5,6 +5,7 @@ import TeamImage from "../components/TeamImage";
 
 import Google from "../components/Google";
 import Link from "next/link";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function kontakt() {
   return (
@@ -58,6 +59,15 @@ function kontakt() {
       <div className={styles.google}>
         <Google />
       </div>
+      <FloatingWhatsApp
+        phoneNumber="+436602750881"
+        accountName="Tierarztpraxis Quehenberger"
+        chatMessage="Willkommen! 
+        Wie können wir ihnen helfen?"
+        statusMessage="Whatsapp"
+        messageDelay={1.5}
+        notificationDelay={5}
+      />
     </div>
   );
 }
