@@ -72,8 +72,8 @@ const PageFeed = () => {
 
       <div className={styles.feed}>
         {feedData.map((post) => (
-          <Link href={post.link}>
-            <div key={post.id} className={styles.postCard}>
+          <Link href={post.link} key={post.id}>
+            <div className={styles.postCard}>
               {post.video ? (
                 <div className={styles.postVideo}>
                   <video controls>

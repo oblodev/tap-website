@@ -17,7 +17,6 @@ import PageFeed from "../components/PageFeed";
 import faceWA from "../public/images/face.png";
 
 export default function Home() {
-  console.log(faceWA);
   return (
     <div className={styles.container}>
       <Head>
