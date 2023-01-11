@@ -21,18 +21,16 @@ const PageFeed = () => {
   };
 
   useEffect(() => {
+    const accessToken = process.env.FACEBOOK_ACCESS_TOKEN;
     const fetchData = async () => {
       try {
         // Replace {page-id} with the ID of your page and {access-token} with your access token
-        const url = `https://graph.facebook.com/101502198272121/feed?fields=id,message,full_picture,created_time,permalink_url,attachments{media}&limit=6&access_token=EAAG6Tvy6E40BALZAFTwMax28zJMisuEHe9s1aKwwoZAfgXF0wPC6TJL3K9TbZBXc3P7XLWdMPhD2IQXJIAAPEbEdrj3Nrm8w8hfCkX6Rj0PSzRZBLaFl2oziyYStUFkFtW9wiAzA4YL6LzJ8werB8wl0H8urtkIZBOhvQThowbSXlEgGZCuUjj`;
+        const url = `https://graph.facebook.com/101502198272121/feed?fields=id,message,full_picture,created_time,permalink_url,attachments{media}&limit=6&access_token=${accessToken}`;
         const response = await fetch(url);
         const data = await response.json();
         const posts = [];
         for (const post of data.data) {
-          const postData = await fetchPostData(
-            post.id,
-            "EAAG6Tvy6E40BALZAFTwMax28zJMisuEHe9s1aKwwoZAfgXF0wPC6TJL3K9TbZBXc3P7XLWdMPhD2IQXJIAAPEbEdrj3Nrm8w8hfCkX6Rj0PSzRZBLaFl2oziyYStUFkFtW9wiAzA4YL6LzJ8werB8wl0H8urtkIZBOhvQThowbSXlEgGZCuUjj"
-          );
+          const postData = await fetchPostData(post.id, `${accessToken}`);
           const combinedData = {
             created_time: post.created_time,
             message: post.message,
