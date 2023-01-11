@@ -35,6 +35,12 @@ function kontakt() {
               <Link href="tel:+43 2252 26 60 37">+43 2252 26 60 37</Link>
             </b>
           </p>
+          <p>
+            Sie können uns auch gerne über Whatsapp erreichen:{" "}
+            <Link href="https://wa.me/436602750881">
+              <span>+43 660 275 08 81</span>
+            </Link>
+          </p>
         </div>
         <div className={styles.kontaktForm}>
           <div className={styles.kontaktCard}>
@@ -60,7 +66,7 @@ function kontakt() {
         <Google />
       </div>
       <FloatingWhatsApp
-        phoneNumber="+436602750881"
+        phoneNumber="436602750881"
         accountName="Tierarztpraxis Quehenberger"
         chatMessage="Willkommen! 
         Wie können wir ihnen helfen?"

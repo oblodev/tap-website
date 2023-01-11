@@ -43,9 +43,6 @@ function Footer() {
           </ul>
           <ul>
             <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-            <li>
               <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>

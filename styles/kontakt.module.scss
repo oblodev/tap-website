@@ -68,6 +68,11 @@
         margin-top: 2.5rem;
         line-height: 1.75;
 
+        span {
+          font-weight: bold;
+          cursor: pointer;
+        }
+
         @media screen and (max-width: 450px) {
           width: 100%;
         }

@@ -29,7 +29,7 @@ export default function Home() {
       <PageFeed />
       <Block />
       <FloatingWhatsApp
-        phoneNumber="+436602750881"
+        phoneNumber="436602750881"
         accountName="Tierarztpraxis Quehenberger"
         chatMessage="Willkommen! 
         Wie können wir ihnen helfen?"
