@@ -8,36 +8,21 @@ import { ImFacebook2 } from "react-icons/im";
 const PageFeed = () => {
   const [feedData, setFeedData] = useState(null);
 
-  const fetchPostData = async (postId, accessToken) => {
-    try {
-      // Replace {post-id} with the ID of the post and {access-token} with your access token
-      const url = `https://graph.facebook.com/${postId}?fields=attachments&access_token=${accessToken}`;
-      const response = await fetch(url);
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
   useEffect(() => {
-    const accessToken = process.env.FACEBOOK_ACCESS_TOKEN;
     const fetchData = async () => {
       try {
         // Replace {page-id} with the ID of your page and {access-token} with your access token
-        const url = `https://graph.facebook.com/101502198272121/feed?fields=id,message,full_picture,created_time,permalink_url,attachments{media}&limit=6&access_token=${accessToken}`;
+        const url = `/api/hello`;
         const response = await fetch(url);
         const data = await response.json();
         const posts = [];
         for (const post of data.data) {
-          const postData = await fetchPostData(post.id, `${accessToken}`);
           const combinedData = {
             created_time: post.created_time,
             message: post.message,
             full_picture: post.full_picture,
             link: post.permalink_url,
             video: post.attachments.data[0].media.source,
-            attachments: postData.attachments,
           };
           posts.push(combinedData);
         }
