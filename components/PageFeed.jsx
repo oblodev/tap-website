@@ -15,6 +15,7 @@ const PageFeed = () => {
         const url = `/api/hello`;
         const response = await fetch(url);
         const data = await response.json();
+        console.log(data);
         const posts = [];
         for (const post of data.data) {
           const combinedData = {
