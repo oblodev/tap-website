@@ -6,6 +6,7 @@ import TeamImage from "../components/TeamImage";
 import Google from "../components/Google";
 import Link from "next/link";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { BsFillGeoAltFill } from "react-icons/bs";
 
 function kontakt() {
   return (
@@ -63,7 +64,22 @@ function kontakt() {
       </motion.div>
       <TeamImage />
       <div className={styles.google}>
-        <Google />
+        <div className={styles.geoGoogle}>
+          <h3>Unsere Adresse:</h3>
+          <p>Vöslauer Straße 63/Top 2</p>
+          <p>2500 Baden</p>
+          <a href="https://www.google.com/maps/dir//Tierarzt+Mag.+Christian+Quehenberger+-+Dr.+Bully/@47.9987115,16.1593319,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x476da9345c0902ad:0x8900dc981867836c!2m2!1d16.2293268!2d47.9987424">
+            <p className={styles.geo}>
+              Der Weg zu uns!{" "}
+              <span className={styles.geotag}>
+                <BsFillGeoAltFill />
+              </span>
+            </p>
+          </a>
+        </div>
+        <div className={styles.map}>
+          <Google />
+        </div>
       </div>
       <FloatingWhatsApp
         phoneNumber="436602750881"

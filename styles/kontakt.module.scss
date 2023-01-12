@@ -176,13 +176,81 @@
   }
 
   .google {
-    margin-top: 8rem;
-    margin-bottom: -4rem;
+    padding-top: 8rem;
+    padding-bottom: -4rem;
     text-align: center;
     font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
 
     @media screen and (max-width: 450px) {
-      font-size: 3rem;
+      flex-direction: column;
+      padding-top: 2rem;
+      align-items: center;
+      text-align: center;
     }
+
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+      flex-direction: column;
+      padding-top: 2rem;
+      align-items: center;
+    }
+
+    .geoGoogle {
+      padding-right: 4rem;
+      text-align: left;
+      padding-top: 4rem;
+      padding-left: 1rem;
+
+      @media screen and (max-width: 450px) {
+        text-align: center;
+        padding-right: 0;
+      }
+
+      @media screen and (min-width: 451px) and (max-width: 768px) {
+        text-align: center;
+        padding-right: 0;
+      }
+
+      h3 {
+        font-size: 1.65rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.geo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.geo:hover {
+  color: #04436f;
+}
+
+.geotag {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.map {
+  width: 70% !important;
+
+  @media screen and (max-width: 450px) {
+  }
+
+  @media screen and (min-width: 451px) and (max-width: 768px) {
+    width: 90% !important;
+    margin-top: 2rem;
   }
 }

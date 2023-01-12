@@ -16,7 +16,7 @@ export default function Google() {
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: "580px", width: "100%" }}>
+    <div style={{ height: "580px" }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyCSnKljo1hUUkUkOTLIySzB6H14TC-g_pI" }}
         defaultCenter={defaultProps.center}
@@ -26,7 +26,7 @@ export default function Google() {
           className={styles.marker}
           lat={47.998794902981594}
           lng={16.229314253044365}
-          text="Tierarzt Quehenberger"
+          text="Tierarzt Mag. Christian Quehenberger - Dr. Bully"
         />
       </GoogleMapReact>
     </div>
