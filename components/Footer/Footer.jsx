@@ -43,6 +43,9 @@ function Footer() {
           </ul>
           <ul>
             <li>
+              <Link href="/videos">Videos</Link>
+            </li>
+            <li>
               <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>

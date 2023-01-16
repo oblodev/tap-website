@@ -35,6 +35,9 @@ function Nav() {
               <Link href="/mopsundco">Mops & Co.</Link>
             </li>
             <li>
+              <Link href="/videos">Videos</Link>
+            </li>
+            <li>
               <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
@@ -57,6 +60,9 @@ function Nav() {
                 </li>
                 <li onClick={() => setToggleSide(false)}>
                   <Link href="/mopsundco">Mops & Co.</Link>
+                </li>
+                <li onClick={() => setToggleSide(false)}>
+                  <Link href="/videos">Videos</Link>
                 </li>
                 <li onClick={() => setToggleSide(false)}>
                   <Link href="/kontakt">Kontakt</Link>
