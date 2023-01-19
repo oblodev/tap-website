@@ -22,7 +22,7 @@ function VideoFeed() {
   return (
     <>
       <div className={styles.header}>
-        <h2>Unsere Youtube-Videos</h2>
+        <h2>Dr. Bully Youtube-Videos</h2>
         <AiFillYoutube className={styles.headerIcon} />
       </div>
       <div className={styles.wrapper}>
