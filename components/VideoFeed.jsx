@@ -10,7 +10,7 @@ function VideoFeed() {
     const fetchData = async () => {
       const { data } = await axios.get("/api/youtube", {
         params: {
-          channelId: "UC-nPp3D0XVWBMNZuURXd_Yg",
+          channelId: "UCpQBUnswn_bzqSzceeM261g",
         },
       });
       setVideos(data.items);
