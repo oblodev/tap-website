@@ -10,8 +10,8 @@ function qualzucht() {
           <h1>QUALZUCHT</h1>
           <p>
             <strong>
-              "Kein Tier hat es verdient unter Qualzucht zu leiden. Wir als
-              Menschen müssen Verantwortung übernehmen." - Christian
+              &quot;Kein Tier hat es verdient unter Qualzucht zu leiden. Wir als
+              Menschen müssen Verantwortung übernehmen.&quot; - Christian
               Quehenberger
             </strong>
           </p>
