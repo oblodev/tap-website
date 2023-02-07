@@ -3,7 +3,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { AiFillYoutube } from "react-icons/ai";
 
-function VideoFeed() {
+function VideoFeed({ data }) {
+  console.log(data);
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -26,24 +27,24 @@ function VideoFeed() {
         <AiFillYoutube className={styles.headerIcon} />
       </div>
       <div className={styles.wrapper}>
-        {videos.slice(1).map((video) => (
-          <div key={video.id.videoId} className={styles.videoCard}>
+        {data.map((video) => (
+          <div key={video.node.titel} className={styles.videoCard}>
             <a
-              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+              href={`https://www.youtube.com/embed/${video.node.videoLink}`}
               className={styles.videoLink}
             >
-              {video.snippet.title}
+              {video.node.titel}
             </a>
 
             <iframe
               width="500"
               height="315"
-              src={`https://www.youtube.com/embed/${video.id.videoId}`}
+              src={`https://www.youtube.com/embed/${video.node.videoLink}`}
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            <p>{video.snippet.description}</p>
+            <p>{video.node.beschreibung.text}</p>
           </div>
         ))}
       </div>

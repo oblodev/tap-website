@@ -48,3 +48,25 @@ export const getTeamMemberDetails = async (name) => {
   const result = await request(graphqlAPI, query, { name });
   return result.teamMembers;
 };
+
+export const getVideos = async () => {
+  const query = gql`
+    query GetVideos {
+      ytVideosConnection {
+        edges {
+          node {
+            beschreibung {
+              text
+            }
+            titel
+            videoLink
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.ytVideosConnection.edges;
+};
