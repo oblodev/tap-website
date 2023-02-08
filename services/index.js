@@ -1,7 +1,7 @@
 import { request, gql } from "graphql-request";
 
 const graphqlAPI =
-  "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbc49k6q0ajf01uj4zyi0ykf/master";
+  "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cldvym66h1yur01rt68nqghfb/master";
 
 export const getTeamMember = async () => {
   const query = gql`
