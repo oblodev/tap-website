@@ -49,6 +49,15 @@ function Footer() {
               <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
+          <ul>
+            <li>
+              <div className={styles.inhalt}>
+                <Link href="/qualzucht">
+                  Wichtiger Hinweis zu Seiteninhalten
+                </Link>
+              </div>
+            </li>
+          </ul>
         </div>
         <div className={styles.footerBottom}>
           <p>Tierarztpraxis Quehenberger {year} © </p>
