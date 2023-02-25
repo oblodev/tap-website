@@ -4,4 +4,8 @@ module.exports = {
   images: {
     domains: ["media.graphassets.com", "external-vie1-1.xx.fbcdn.net"],
   },
+  experimental: {
+    workerThreads: false,
+    cpus: 1,
+  },
 };
