@@ -1,6 +1,7 @@
 import styles from "../styles/MopsInfoRight.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
+import augen from "../public/images/augen.jpg";
 
 import { motion } from "framer-motion";
 
@@ -36,7 +37,7 @@ function MopsInfoRight() {
         </div>
         <div className={styles.infoImage}>
           <Image
-            src={pug}
+            src={augen}
             alt="info-foto"
             layout="responsive"
             objectFit="cover"

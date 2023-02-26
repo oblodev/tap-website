@@ -111,11 +111,9 @@
       justify-content: center;
       margin: auto;
       margin-top: 8rem;
-      padding-left: 10rem;
 
       @media screen and (max-width: 450px) {
         flex-direction: column;
-        padding: 0.9rem;
       }
 
       @media screen and (min-width: 451px) and (max-width: 768px) {
@@ -128,50 +126,65 @@
       }
 
       .dog {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        padding: 1rem;
+
         @media screen and (max-width: 450px) {
           margin-bottom: 6rem;
+          flex-direction: column;
         }
 
         @media screen and (min-width: 451px) and (max-width: 768px) {
           margin-bottom: 6rem;
+          flex-direction: column;
         }
 
-        .dogImage {
-          width: 420px;
-          max-height: 300px;
-          border-radius: 20px;
-          overflow: hidden;
-          transition: 0.3s all ease-in-out;
-
+        .dogToggle {
+          margin-right: 6rem;
           @media screen and (max-width: 450px) {
-            width: 360px;
+            margin-right: 0;
           }
 
-          @media screen and (min-width: 451px) and (max-width: 768px) {
-            width: 500px;
+          .dogImage {
+            width: 420px;
+            max-height: 360px;
+            border-radius: 20px;
+            overflow: hidden;
+            object-fit: cover;
+            transition: 0.3s all ease-in-out;
+            cursor: pointer;
+
+            @media screen and (max-width: 450px) {
+              width: 360px;
+            }
+
+            @media screen and (min-width: 451px) and (max-width: 768px) {
+              width: 500px;
+            }
+
+            @media only screen and (min-width: 769px) and (max-width: 992px) {
+              max-width: 360px;
+              max-height: 280px;
+            }
           }
 
-          @media only screen and (min-width: 769px) and (max-width: 992px) {
-            max-width: 360px;
-            max-height: 280px;
+          .dogImage:hover {
+            transform: scale(1.065);
           }
-        }
 
-        .dogImage:hover {
-          transform: scale(1.1);
-        }
-
-        h3 {
-          font-weight: 600;
-          font-size: 1.4rem;
-        }
-
-        h4 {
-          font-weight: 600;
+          h4 {
+            font-weight: 600;
+            margin: 0;
+          }
         }
 
         p {
-          width: 70%;
+          width: 90%;
           line-height: 1.65;
 
           @media screen and (max-width: 450px) {

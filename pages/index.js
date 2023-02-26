@@ -4,9 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import Hero from "../components/Hero";
 import InfoHero from "../components/InfoHero";
-import Aktuelles from "../components/Aktuelles";
 import Block from "../components/Block";
-import Frame from "../components/Frame";
 
 import { getTeamMember } from "../services";
 import { getBlogPost } from "../services/blogService";
@@ -14,7 +12,7 @@ import { getBlogPost } from "../services/blogService";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import PageFeed from "../components/PageFeed";
 
-import faceWA from "../public/images/face.png";
+import faceWA from "../public/images/face.jpg";
 
 export default function Home() {
   return (
@@ -36,6 +34,7 @@ export default function Home() {
         statusMessage="Whatsapp"
         messageDelay={1.5}
         notificationDelay={5}
+        avatar={faceWA}
       />
     </div>
   );

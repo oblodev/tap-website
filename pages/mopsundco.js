@@ -7,6 +7,7 @@ import MopsInfoLeft from "../components/MopsInfoLeft";
 import MopsInfoRight from "../components/MopsInfoRight";
 import MopsInfoLeftSec from "../components/MopsInfoLeftSec";
 import KomplexLappen from "../components/KomplexLappen";
+
 import Link from "next/link";
 
 function mopsundco() {

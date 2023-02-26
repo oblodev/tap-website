@@ -5,13 +5,14 @@ import team1 from "../public/images/Dr.jpg";
 import nils from "../public/images/doggy.jpg";
 import diego from "../public/images/diego.jpg";
 
-import { getTeamMember } from "../services";
+import { getDogMember, getTeamMember } from "../services";
 
 import { motion } from "framer-motion";
 
 import Link from "next/link";
 
-function team({ data }) {
+function team({ data, dogData }) {
+  console.log(dogData);
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -61,52 +62,25 @@ function team({ data }) {
         </motion.div>
         <div className={styles.dogMember}>
           <div className={styles.dog}>
-            <div className={styles.dogImage}>
-              <Image
-                src={nils}
-                alt="dog-member-foto"
-                layout="responsive"
-                objectFit="cover"
-              />
-            </div>
+            {dogData &&
+              dogData.map((dog) => (
+                <Link href={`dogs/${dog.node.name}`}>
+                  <div className={styles.dogToggle}>
+                    <div className={styles.dogImage}>
+                      <Image
+                        src={dog.node.foto.url}
+                        alt="dog-member-foto"
+                        width={420}
+                        height={400}
+                        objectFit="cover"
+                      />
+                    </div>
 
-            <h3>Nils</h3>
-            <h4>Hundepsychologe, Angsttherapie</h4>
-            <p>
-              Ich kam als Welpe in die Lehre in unsere Tierarztpraxis. Schnell
-              zeigte sich, dass ich eine gute soziale Ader hatte, um ängstlichen
-              Artgenossen Entspannung in der Ordination zu vermitteln. Durch
-              Ausbildung wurde dann mein Talent gefördert und so habe in der
-              Zwischenzeit ein richtiges Programm, in welchem ich in
-              Hundesprache immer sage: &quot;Wenn ich hier keine Angst zu haben
-              brauche, brauchst du das auch nicht.&quot; Da ich selbst nicht der
-              mutigste bin, verstehe ich die Ängste beim Tierarztbesuch gut. Für
-              hibbelige Kurzschnauzer ist dann aber mein Kollege Diego
-              zuständig.
-            </p>
-          </div>
-          <div className={styles.dog}>
-            <div className={styles.dogImage}>
-              <Image
-                src={diego}
-                alt="dog-member-foto"
-                layout="responsive"
-                objectFit="cover"
-              />
-            </div>
-            <h3>Diego</h3>
-            <h4>Hundepsychologe, Aufgeregtheitstherapie</h4>
-            <p>
-              Mein Beginn hier war durch eine schwere Erkrankung gekennzeichnet.
-              Es war ein langer und schwieriger Prozess mit ungewissem Ausgang.
-              Zum Glück verlief dann alles gut. Da ich gut in Bullysprache bin,
-              bekam ich dann auch ein Jobangebot in der Tierarztpraxis
-              Quehenberger. Ich durfte Nils bei hibbeligen Kurzschnauzern
-              unterstützen. Oft ist ja dabei die Aufregung groß, mit welcher ich
-              schon gut umzugehen weiß. Gemeinsam mit Nils unterstützen wir Dr.
-              Bully dank unserer überlegenen Kommunikationsfähigkeiten bei
-              seinen Patienten.
-            </p>
+                    <h3>{dog.node.name}</h3>
+                    <p>{dog.node.position}</p>
+                  </div>
+                </Link>
+              ))}
           </div>
         </div>
         <Fragen />
@@ -119,10 +93,12 @@ export default team;
 
 export async function getStaticProps() {
   const data = (await getTeamMember()) || [];
+  const dogData = (await getDogMember()) || [];
 
   return {
     props: {
       data,
+      dogData,
     },
   };
 }

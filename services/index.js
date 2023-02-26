@@ -70,3 +70,47 @@ export const getVideos = async () => {
 
   return result.ytVideosConnection.edges;
 };
+
+export const getDogMember = async () => {
+  const query = gql`
+    query DogMembers {
+      dogMembersConnection {
+        edges {
+          node {
+            name
+            position
+            beschreibung {
+              raw
+            }
+            foto {
+              url
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.dogMembersConnection.edges;
+};
+
+export const getDogMemberDetails = async (name) => {
+  const query = gql`
+    query GetDogMemberDetail($name: String!) {
+      dogMembers(where: { name: $name }) {
+        name
+        position
+        beschreibung {
+          raw
+        }
+        foto {
+          url
+        }
+      }
+    }
+  `;
+  const result = await request(graphqlAPI, query, { name });
+  return result.dogMembers;
+};

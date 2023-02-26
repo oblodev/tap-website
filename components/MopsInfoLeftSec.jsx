@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
+import oper from "../public/images/oper.jpg";
+
 function MopsInfoLeftSec() {
   return (
     <div className={styles.infoContainer}>
@@ -15,7 +17,7 @@ function MopsInfoLeftSec() {
       >
         <div className={styles.infoImage}>
           <Image
-            src={pug}
+            src={oper}
             alt="info-foto"
             layout="responsive"
             objectFit="cover"
