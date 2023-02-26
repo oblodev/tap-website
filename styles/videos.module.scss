@@ -28,11 +28,6 @@
     }
   }
   .wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-
     @media screen and (max-width: 450px) {
       display: flex;
       flex-direction: column;
