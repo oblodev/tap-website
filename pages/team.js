@@ -64,7 +64,7 @@ function team({ data, dogData }) {
           <div className={styles.dog}>
             {dogData &&
               dogData.map((dog) => (
-                <Link href={`dogs/${dog.node.name}`}>
+                <Link href={`dogs/${dog.node.name}`} key={dog.node.name}>
                   <div className={styles.dogToggle}>
                     <div className={styles.dogImage}>
                       <Image
