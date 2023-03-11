@@ -8,7 +8,7 @@ function impressum() {
         <h2>Verantwortlich:</h2>
         <p>ANGABEN GEMÄSS § 5 TMG</p>
         <p>
-          Mag. Christian Quehenberger e.U. <br />
+          Tierarztpraxis Quehenberger GmbH <br />
           Vöslauer Straße 63 / Top 2 <br />
           2500 Baden
         </p>
@@ -18,10 +18,10 @@ function impressum() {
           WhatsApp :+43 660 275 08 81 <br />
           E-Mail: office@tierarztpraxis-quehenberger.at
         </p>
-        <h2>Umsatzsteuer-ID:</h2>
+        <h2>Umsatzsteuer-ID: </h2>
         <p>
-          Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
-          ATU72068567
+          Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: ATU
+          79081878
         </p>
         <h2>Berufsbezeichnung und berufsrechtliche Regelungen:</h2>
         <p>

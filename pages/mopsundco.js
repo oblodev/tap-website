@@ -49,10 +49,10 @@ function mopsundco() {
           <div className={styles.contactWrapper}>
             <div className={styles.contactText}>
               <p>
-                Die medinische Betreuung unserer Kurzschnauzer ist für uns weit
-                mehr als ein Beruf. Die speziellen Bedürfnisse dieser Rassen
-                erfüllen wir nicht nur mit modernsten medizinischen Methothoden
-                sondern auch mit Herz und Leidenschaft.
+                Die medizinische Betreuung unserer Kurzschnauzer ist für uns
+                weit mehr als ein Beruf. Die speziellen Bedürfnisse dieser
+                Rassen erfüllen wir nicht nur mit modernsten medizinischen
+                Methoden sondern auch mit Herz und Leidenschaft.
               </p>
             </div>
             <div className={styles.contactHeader}>

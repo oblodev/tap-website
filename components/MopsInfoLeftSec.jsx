@@ -27,9 +27,9 @@ function MopsInfoLeftSec() {
           <h3>Magenprobleme</h3>
 
           <p>
-            Die Verdauung und im spezeillen der Magen sind eine häufige
-            Baustelle bei Mops, Bully und Co.. In der Regel wird zu Beginn mit
-            einer medikamentösen Therapie begonnen.
+            Die Verdauung und im speziellen der Magen sind eine häufige
+            Problemstelle bei Mops oder Bully und in der Regel wird zu Beginn
+            mit einer medikamentösen Therapie begonnen.
           </p>
           <p>
             Wenn die Probleme jedoch nicht besser werden oder es immer wieder zu

@@ -36,7 +36,9 @@ function leistungen() {
           transition={{ duration: 1 }}
         >
           <div className={styles.card}>
-            <Image src={img2} />
+            <div className={styles.cardImage}>
+              <Image src={img2} />
+            </div>
             <div className={styles.heading}>
               <h2>Diagnostik</h2>
               <p>
@@ -48,7 +50,9 @@ function leistungen() {
             </div>
           </div>
           <div className={styles.card}>
-            <Image src={img1} />
+            <div className={styles.cardImage}>
+              <Image src={img1} />
+            </div>
             <div className={styles.heading}>
               <h2>Chirurgie</h2>
               <p>
@@ -56,12 +60,16 @@ function leistungen() {
                 Stand der Technik. Sowohl die neuesten Geräte, wie auch unser
                 Team aus Spezialisten sorgen für kompetente Beratung und
                 Betreuung.
+                <br />
+                <br />
               </p>
             </div>
           </div>
 
           <div className={styles.card}>
-            <Image src={intern} />
+            <div className={styles.cardImage}>
+              <Image src={intern} />
+            </div>
             <div className={styles.heading}>
               <h2>Interne Medizin</h2>
               <p>

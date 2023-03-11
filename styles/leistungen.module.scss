@@ -46,9 +46,12 @@
 
     .cards {
       display: flex;
-      margin-top: 4rem;
+      grid-template-columns: row;
       align-items: center;
+      margin-top: 4rem;
+
       justify-content: space-around;
+      position: relative;
 
       @media screen and (max-width: 450px) {
         flex-direction: column;
@@ -86,8 +89,13 @@
           width: 340px;
         }
 
+        .cardImage {
+          height: 216px !important;
+          overflow: hidden;
+        }
+
         .heading {
-          padding: 0 0.85rem 0.85rem 0.85rem;
+          padding: 0 0.85rem 1.2rem 0.85rem;
           margin-top: 1rem;
 
           p {

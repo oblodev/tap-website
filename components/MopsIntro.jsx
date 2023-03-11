@@ -5,7 +5,6 @@ import { GiSittingDog } from "react-icons/gi";
 
 import { motion } from "framer-motion";
 
-
 function MopsIntro() {
   return (
     <div className={styles.mopsIntroContainer}>
@@ -37,7 +36,7 @@ function MopsIntro() {
           <div className={styles.mopsIntroInfoText}>
             <h3>Medikamente</h3>
             <p>
-              Möpse, Französische und Englische Bulldoggen reagieren oft
+              Möpse, französische und englische Bulldoggen reagieren oft
               unvorhergesehen auf Medikamente.
             </p>
           </div>
