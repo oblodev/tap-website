@@ -147,6 +147,7 @@
             transition: all 0.3s ease-in-out;
             @media screen and (max-width: 450px) {
               margin-right: 1rem;
+              font-size: 0.9rem;
             }
 
             @media screen and (min-width: 451px) and (max-width: 768px) {

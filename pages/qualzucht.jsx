@@ -65,7 +65,7 @@ function qualzucht() {
             <p>
               Aufgrund meiner Spezialisierung auf medizinische Probleme von
               französichen Bulldoggen nannten mich viele Kunden einfach
-              &quot;Doktor Bully&quot;. Da mir dieser Name gefiel, meldte ich
+              &quot;Doktor Bully&quot;. Da mir dieser Name gefiel, meldete ich
               ihn als Marke an. Die Marke verdeutlichte eine Spezialisierung auf
               eine Hunderasse. Sie ist nicht als Verharmlosung oder
               Unterstützung von Qualzucht zu sehen.
