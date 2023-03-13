@@ -189,7 +189,8 @@ function datenschutz() {
         </p>
         <p>SIE ERREICHEN UNS UNTER FOLGENDEN KONTAKTDATEN:</p>
         <p>
-          Tierarztpraxis Quehenberger <br /> Vöslauer Straße 63/Top2 2500 Baden
+          Tierarztpraxis Quehenberger GmbH <br /> Vöslauer Straße 63/Top2 2500
+          Baden
           <br /> FN: fehlt noch <br /> UID Nr.: ATU72068567
           <br /> Telefon: +43 2252 26 60 37 <br />
           WhatsApp: +43 660 275 08 81 <br />
