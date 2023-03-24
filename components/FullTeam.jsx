@@ -1,7 +1,7 @@
 import styles from "../styles/FullTeam.module.scss";
 import team from "../public/images/fullTeam.jpg";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 function FullTeam() {
