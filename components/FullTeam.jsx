@@ -21,8 +21,9 @@ function FullTeam() {
       >
         <Link href="/leistungen">
           <h2>
-            "Kein Tier hat es verdient unter Qualzucht zu leiden. Wir als
-            Menschen müssen Verantwortung übernehmen." - Christian Quehenberger
+            &quot;Kein Tier hat es verdient unter Qualzucht zu leiden. Wir als
+            Menschen müssen Verantwortung übernehmen.&quot; - Christian
+            Quehenberger
           </h2>
         </Link>
       </motion.div>
