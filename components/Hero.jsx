@@ -1,6 +1,6 @@
 import styles from "../styles/Hero.module.scss";
 import Image from "next/image";
-import heroImage from "../public/images/Dr.jpg";
+import heroImage from "../public/images/Duo.jpg";
 import Link from "next/link";
 
 import { motion } from "framer-motion";

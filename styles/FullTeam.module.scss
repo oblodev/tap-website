@@ -1,0 +1,38 @@
+.container {
+  margin-top: 10rem !important;
+  max-width: 1400px;
+  margin: auto;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+  }
+
+  .heroText {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4rem !important;
+
+    width: 85.5%;
+
+    h2 {
+      cursor: pointer;
+      transition: 0.2s all ease-in-out;
+      text-align: center;
+      color: #04436f;
+      font-size: 2rem;
+
+      @media screen and (max-width: 450px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    h2:hover {
+      color: #04436f;
+    }
+  }
+}

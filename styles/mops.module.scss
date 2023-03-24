@@ -10,18 +10,22 @@
     .hero {
       display: flex;
       flex-direction: column;
-      margin-bottom: 16rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
 
       @media screen and (max-width: 450px) {
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
+        margin-top: 6rem !important;
       }
 
       @media screen and (min-width: 451px) and (max-width: 768px) {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
       }
 
       @media only screen and (min-width: 769px) and (max-width: 992px) {
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
       }
 
       .heroImage {
@@ -64,10 +68,6 @@
         }
 
         h2 {
-          position: absolute;
-          top: -130px;
-          left: -100px;
-
           z-index: 100;
 
           font-size: 5.2rem;

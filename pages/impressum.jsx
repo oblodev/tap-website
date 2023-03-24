@@ -80,6 +80,46 @@ function impressum() {
           entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
           werden wir derartige Inhalte umgehend entfernen.
         </p>
+
+        <div>
+          <div>
+            <h2>
+              Hinweis zu den Bildern und Videos dieser Seite und auf sozialen
+              Medien
+            </h2>
+            <p>
+              Fotos und Videos auf dieser Seite und den von mir betriebenen
+              Seiten auf sozialen Medien enthalten Abbildungen von Hunden mit
+              Qualzuchtmerkmalen. Dabei handelt es sich um meine Patienten oder
+              um eigene Hunde. Die Behandlung dieser armen Hunde ist mein
+              Spezialgebiet und ich zeige mit diesen Bildern und Videos meine
+              Arbeit. Die Fotos und Videos dürfen nicht als Verharmlosung oder
+              gar Unterstützung von Qualzucht verstanden werden. Meine Mission
+              ist es Tierleid, welches durch Qualzucht entstanden ist, zu
+              lindern.
+            </p>
+          </div>
+          <div>
+            <h2>Hinweis zur Marke Doktor Bully ©</h2>
+            <p>
+              Aufgrund meiner Spezialisierung auf medizinische Probleme von
+              französichen Bulldoggen nannten mich viele Kunden einfach
+              &quot;Doktor Bully&quot;. Da mir dieser Name gefiel, meldete ich
+              ihn als Marke an. Die Marke verdeutlichte eine Spezialisierung auf
+              eine Hunderasse. Sie ist nicht als Verharmlosung oder
+              Unterstützung von Qualzucht zu sehen.
+            </p>
+          </div>
+          <div>
+            <h2>Hinweis zum Logo</h2>
+            <p>
+              Mein Logo zeigt einen stilisierten Kopf eines Kurzschnauzers, da
+              ich mich auf die Behandlung verschiedener Erkrankungen dieser
+              Rassen spezialisiert habe. Es stellt keine Verharmlosung oder
+              Unterstützung von Qualzucht dar.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

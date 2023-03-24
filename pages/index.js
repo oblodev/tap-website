@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Hero from "../components/Hero";
 import InfoHero from "../components/InfoHero";
 import Block from "../components/Block";
+import FullTeam from "../components/FullTeam";
 
 import { getTeamMember } from "../services";
 import { getBlogPost } from "../services/blogService";
@@ -22,8 +23,8 @@ export default function Home() {
         <meta name="description" content="Tierpraxis Quehenberger - Webseite" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <FullTeam />
       <Hero />
-      <InfoHero />
       <PageFeed />
       <Block />
       <FloatingWhatsApp

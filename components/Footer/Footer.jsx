@@ -22,23 +22,23 @@ function Footer() {
               <Link href="/leistungen">Leistungen</Link>
             </li>
             <li>
-              <Link href="/team">Team</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link href="/mopsundco">Mops & Co.</Link>
-            </li>
-            <li>
               <Link href="/komplexlappentechnik">Komplexlappentechnik</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <Link href="/datenschutz">Datenschutz</Link>
+              <Link href="/team">Team</Link>
             </li>
             <li>
               <Link href="/impressum">Impressum</Link>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <Link href="/mopsundco">Bully & Co.</Link>
+            </li>
+            <li>
+              <Link href="/dataenschutz">Datenschutz</Link>
             </li>
           </ul>
           <ul>
@@ -47,15 +47,6 @@ function Footer() {
             </li>
             <li>
               <Link href="/kontakt">Kontakt</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div className={styles.inhalt}>
-                <Link href="/qualzucht">
-                  Wichtiger Hinweis zu Seiteninhalten
-                </Link>
-              </div>
             </li>
           </ul>
         </div>

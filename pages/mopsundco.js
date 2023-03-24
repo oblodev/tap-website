@@ -15,12 +15,9 @@ function mopsundco() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.hero}>
-          <div className={styles.heroImage}>
-            <Image src={bull} />
-          </div>
           <div className={styles.heroText}>
-            <h2>Mops & Co.</h2>
-            <ul>
+            <h2>Bully & Co.</h2>
+            {/* <ul>
               <li>
                 <Link href="#atem" scroll={false}>
                   Atemnot
@@ -36,13 +33,14 @@ function mopsundco() {
                   Magenprobleme
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
 
         <MopsIntro />
-        <KomplexLappen />
         <MopsInfoLeft />
+        <KomplexLappen />
+
         <MopsInfoRight />
         <MopsInfoLeftSec />
         <div className={styles.contact}>

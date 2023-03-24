@@ -32,7 +32,7 @@ function Nav() {
               <Link href="/team">Team</Link>
             </li>
             <li>
-              <Link href="/mopsundco">Mops & Co.</Link>
+              <Link href="/mopsundco">Bully & Co.</Link>
             </li>
             <li>
               <Link href="/qualzucht">Qualzucht</Link>
@@ -62,7 +62,7 @@ function Nav() {
                   <Link href="/team">Team</Link>
                 </li>
                 <li onClick={() => setToggleSide(false)}>
-                  <Link href="/mopsundco">Mops & Co.</Link>
+                  <Link href="/mopsundco">Bully & Co.</Link>
                 </li>
                 <li onClick={() => setToggleSide(false)}>
                   <Link href="/videos">Videos</Link>
