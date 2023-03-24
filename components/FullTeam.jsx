@@ -1,5 +1,5 @@
 import styles from "../styles/FullTeam.module.scss";
-import team from "../public/images/FullTeam.jpg";
+import team from "../public/images/fullTeam.jpg";
 import Image from "next/image";
 import Link from "next/Link";
 import { motion } from "framer-motion";
