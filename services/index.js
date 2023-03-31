@@ -6,11 +6,12 @@ const graphqlAPI =
 export const getTeamMember = async () => {
   const query = gql`
     query TeamMembers {
-      teamMembersConnection {
+      teamMembersConnection(orderBy: num_ASC) {
         edges {
           node {
             name
             position
+            num
             id
             beschreibung {
               raw
@@ -35,6 +36,7 @@ export const getTeamMemberDetails = async (name) => {
       teamMembers(where: { name: $name }) {
         name
         position
+        num
         id
         beschreibung {
           raw
