@@ -116,3 +116,57 @@ export const getDogMemberDetails = async (name) => {
   const result = await request(graphqlAPI, query, { name });
   return result.dogMembers;
 };
+
+export const getTopMember = async () => {
+  const query = gql`
+    query TopMembers {
+      christianIrisesConnection(orderBy: num_ASC) {
+        edges {
+          node {
+            name
+            position
+            num
+            id
+            beschreibung {
+              raw
+            }
+            foto {
+              url
+            }
+            fotoSeite {
+              url
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.christianIrisesConnection.edges;
+};
+
+export const getTopMemberDetails = async (name) => {
+  const query = gql`
+    query GetTopMemberDetail($name: String!) {
+      christianIrises(where: { name: $name }) {
+        name
+        position
+        num
+        id
+        beschreibung {
+          raw
+        }
+        fotoSeite {
+          url
+        }
+        foto {
+          url
+        }
+      }
+    }
+  `;
+  const result = await request(graphqlAPI, query, { name });
+  return result.christianIrises;
+};

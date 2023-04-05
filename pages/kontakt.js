@@ -19,21 +19,22 @@ function kontakt() {
         <div className={styles.kontaktText}>
           <h1>Ihr Kontakt zu uns</h1>
           <h2>
-            Haben Sie Fragen zu unserem Angebot, oder möchten Sie einen Termin
+            Haben Sie Fragen zu unserem Angebot oder möchten Sie einen Termin
             vereinbaren?
           </h2>
           <p>
             {" "}
-            Unser kompetentes Team ist gerne für Sie da. Füllen Sie einfach das
-            Kontaktformular aus, und wir setzen uns zeitnah mit Ihnen in
-            Verbindung. Natürlich können Sie uns auch telefonisch erreichen,
-            oder Sie besuchen uns nach Terminvereinbarung direkt vor Ort – wir
-            freuen uns auf Sie!
+            Unser kompetentes Team ist gerne für Sie da. Füllen Sie das
+            Kontaktformular aus und wir setzen uns zeitnah mit Ihnen in
+            Verbindung. Gerne können Sie uns auch telefonisch erreichen und
+            einen Termin für einen Besuch vereinbaren – wir freuen uns auf Sie!
           </p>
           <p>
             Termine nach telefonischer Vereinbarung:{" "}
             <b>
-              <Link href="tel:+43 2252 26 60 37">+43 2252 26 60 37</Link>
+              <Link href="tel:+43 2252 26 60 37">
+                <span>+43 2252 26 60 37</span>
+              </Link>
             </b>
           </p>
           <p>
@@ -41,6 +42,12 @@ function kontakt() {
             <Link href="https://wa.me/436602750881">
               <span>+43 660 275 08 81</span>
             </Link>
+          </p>
+          <p>
+            Oder Sie senden uns eine E-Mail an:{" "}
+            <a href="mailto:office@tierarztpraxis-quehenberger.at">
+              <span>office@tierarztpraxis-quehenberger.at</span>
+            </a>
           </p>
         </div>
         <div className={styles.kontaktForm}>

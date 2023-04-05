@@ -1,18 +1,17 @@
 import Image from "next/image";
 import Fragen from "../components/Fragen";
 import styles from "../styles/team.module.scss";
-import team1 from "../public/images/Dr.jpg";
-import nils from "../public/images/doggy.jpg";
-import diego from "../public/images/diego.jpg";
 
-import { getDogMember, getTeamMember } from "../services";
+import { getDogMember, getTeamMember, getTopMember } from "../services";
 
 import { motion } from "framer-motion";
 
 import Link from "next/link";
 
-function team({ data, dogData }) {
+function team({ data, dogData, christianIris }) {
+  console.log(data);
   console.log(dogData);
+  console.log(christianIris);
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -36,6 +35,34 @@ function team({ data, dogData }) {
             Patienten anbieten.
           </p>
         </motion.div>
+
+        {/* Manager-Section */}
+
+        <motion.div
+          className={styles.teamTop}
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+        >
+          {christianIris &&
+            christianIris.map((member) => (
+              <Link href={`/aerzteteam/${member.node.name}`} key={member.id}>
+                <div className={styles.teamMemberTop}>
+                  <Image
+                    src={member.node.foto.url}
+                    alt="member-foto"
+                    width={320}
+                    height={460}
+                  />
+                  <div className={styles.teamMemberInfoTop}>
+                    <p className={styles.bold}>{member.node.name}</p>
+                    <p>{member.node.position}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+        </motion.div>
+
+        {/* Team-Section */}
 
         <motion.div
           className={styles.team}
@@ -94,11 +121,13 @@ export default team;
 export async function getStaticProps() {
   const data = (await getTeamMember()) || [];
   const dogData = (await getDogMember()) || [];
+  const christianIris = (await getTopMember()) || [];
 
   return {
     props: {
       data,
       dogData,
+      christianIris,
     },
   };
 }

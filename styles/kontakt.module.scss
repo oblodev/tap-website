@@ -72,6 +72,11 @@
         span {
           font-weight: bold;
           cursor: pointer;
+          font-size: 0.935rem;
+        }
+
+        span:hover {
+          color: #04436f;
         }
 
         @media screen and (max-width: 450px) {
@@ -92,7 +97,7 @@
       flex: 0.5;
 
       .kontaktCard {
-        padding: 0.5rem 2rem 1rem 2rem;
+        padding: 2rem 2rem 4rem 2rem;
         border: 1px solid rgb(185, 185, 185);
         margin: auto;
         width: 66%;
@@ -141,7 +146,7 @@
           }
 
           button {
-            margin-top: 1.5rem;
+            margin-top: 2.25rem;
             padding: 0.5rem 10rem 0.5rem 10rem;
             background-color: #fff;
             border: 3px solid #04436f;

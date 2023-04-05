@@ -3,10 +3,11 @@ import React from "react";
 import Image from "next/image";
 
 import Link from "next/link";
-import { getTeamMember, getTeamMemberDetails } from "../../services";
+import { getTopMember, getTopMemberDetails } from "../../services";
 
-function teamMember({ data }) {
+function topMember({ data }) {
   const teamMember = data[0];
+  console.log(teamMember);
 
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
@@ -69,7 +70,7 @@ function teamMember({ data }) {
       <div className={styles.wrapper}>
         <div className={styles.infoImage}>
           <Image
-            src={teamMember.foto.url}
+            src={teamMember.fotoSeite.url}
             alt="team-member-image"
             width={520}
             height={800}
@@ -80,15 +81,23 @@ function teamMember({ data }) {
             <h2>{teamMember.name}</h2>
             <p>{teamMember.position}</p>
           </div>{" "}
-          <p>
-            {teamMember.beschreibung.raw.children.map((typeObj, index) => {
-              const children = typeObj.children.map((item, itemIndex) =>
-                getContentFragment(itemIndex, item.text, item)
-              );
+          <div>
+            {" "}
+            <p>
+              {teamMember.beschreibung.raw.children.map((typeObj, index) => {
+                const children = typeObj.children.map((item, itemIndex) =>
+                  getContentFragment(itemIndex, item.text, item)
+                );
 
-              return getContentFragment(index, children, typeObj, typeObj.type);
-            })}
-          </p>
+                return getContentFragment(
+                  index,
+                  children,
+                  typeObj,
+                  typeObj.type
+                );
+              })}
+            </p>
+          </div>
           <Link href="/team">
             <button className={styles.infoBtn}>Zurück</button>
           </Link>
@@ -98,10 +107,10 @@ function teamMember({ data }) {
   );
 }
 
-export default teamMember;
+export default topMember;
 
 export async function getStaticProps({ params }) {
-  const data = await getTeamMemberDetails(params.name);
+  const data = await getTopMemberDetails(params.name);
 
   return {
     props: {
@@ -111,7 +120,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const member = await getTeamMember();
+  const member = await getTopMember();
 
   return {
     paths: member.map(({ node: { name } }) => ({ params: { name } })),

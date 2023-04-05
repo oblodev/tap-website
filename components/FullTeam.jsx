@@ -12,6 +12,8 @@ function FullTeam() {
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1 }}
       >
+        <h1>Tierarztpraxis Quehenberger Dr. Bully®</h1>
+        <p>Ihre Tierarztpraxis in Baden bei Wien</p>
         <Image src={team} alt="Full-Team" />
       </motion.div>
       <motion.div

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import team from "../public/images/bully_team.jpg";
+import team from "../public/images/fullTeam.jpg";
 import styles from "../styles/TeamImage.module.scss";
 import { motion } from "framer-motion";
 

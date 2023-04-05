@@ -1,5 +1,4 @@
 import styles from "../styles/qualzucht.module.scss";
-import FullTeam from "../components/FullTeam";
 
 function qualzucht() {
   return (
@@ -7,7 +6,6 @@ function qualzucht() {
       <div className={styles.wrapper}>
         <div className={styles.header}>
           <h1>Qualzucht</h1>
-          <FullTeam />
         </div>
         <div className={styles.info}>
           <div className={styles.infoText}>

@@ -26,8 +26,8 @@ function leistungen() {
           <h1>Unsere Leistungen</h1>
           <p>
             Wir erfüllen auch anspruchsvollste Anforderungen mit einem Angebot
-            zahlreicher Serviceleistungen. Ihre Zufriedenheit hat für uns stets
-            höchste Priorität.
+            zahlreicher Serviceleistungen. <br /> Ihre Zufriedenheit hat für uns
+            stets höchste Priorität.
           </p>
         </motion.div>
         <motion.div
