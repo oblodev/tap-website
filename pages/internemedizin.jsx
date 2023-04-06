@@ -73,8 +73,8 @@ function internemedizin({ data }) {
 
         {data &&
           data.map((leistung) => (
-            <div className={styles.contentWrap}>
-              <div className={styles.content} key={leistung.node.id}>
+            <div className={styles.contentWrap} key={leistung.node.id}>
+              <div className={styles.content}>
                 <h3>{leistung.node.titel}</h3>
                 <p>
                   {leistung.node.beschreibung.raw.children.map(
