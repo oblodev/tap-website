@@ -74,6 +74,7 @@ function MopsInfoLeft({ data }) {
             whileInView={{ opacity: [0, 1] }}
             transition={{ duration: 1 }}
             id="atem"
+            key={leistung.node.id}
           >
             <div className={styles.infoImage}>
               <Image

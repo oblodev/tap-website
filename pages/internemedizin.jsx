@@ -1,3 +1,4 @@
+import React from "react";
 import { getInterne } from "../services/leistungsService";
 import styles from "../styles/diagnostik.module.scss";
 import Image from "next/image";
@@ -72,7 +73,7 @@ function interne({ data }) {
 
         {data &&
           data.map((leistung) => (
-            <div className={styles.contentWrap}>
+            <div className={styles.contentWrap} key={leistung.node.id}>
               <div className={styles.content}>
                 <h3>{leistung.node.titel}</h3>
                 <p>
