@@ -4,7 +4,7 @@ import styles from "../styles/diagnostik.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-function interne({ data }) {
+function internemedizin({ data }) {
   console.log(data);
 
   const getContentFragment = (index, text, obj, type) => {
@@ -114,7 +114,7 @@ function interne({ data }) {
   );
 }
 
-export default interne;
+export default internemedizin;
 
 export async function getStaticProps() {
   const data = await getInterne();
