@@ -46,8 +46,8 @@
       display: flex;
       grid-template-columns: row;
       align-items: center;
-      margin-top: 4rem;
-
+      margin-top: 10rem;
+      margin-bottom: 4rem;
       justify-content: space-around;
       position: relative;
 
@@ -77,6 +77,7 @@
         align-items: center;
         width: 380px;
         border: 1px solid rgb(231, 231, 231);
+        transition: 0.3s all ease-in-out;
 
         @media screen and (max-width: 450px) {
           padding: 1rem;
@@ -104,6 +105,12 @@
             }
           }
         }
+      }
+
+      .card:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        border: 1px solid #04436f;
       }
     }
   }

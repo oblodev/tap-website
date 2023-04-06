@@ -170,3 +170,55 @@ export const getTopMemberDetails = async (name) => {
   const result = await request(graphqlAPI, query, { name });
   return result.christianIrises;
 };
+
+export const getLeistungenBully = async () => {
+  const query = gql`
+    query LeistungenBully {
+      leistungenBullysConnection {
+        edges {
+          node {
+            titel
+            id
+            kurzbeschreibung
+            beschreibung {
+              raw
+            }
+            foto {
+              url
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.leistungenBullysConnection.edges;
+};
+
+export const getLeistungen = async () => {
+  const query = gql`
+    query Leistungen {
+      leistungensConnection {
+        edges {
+          node {
+            titel
+            id
+            kurzbeschreibung
+            beschreibung {
+              raw
+            }
+            foto {
+              url
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.leistungensConnection.edges;
+};

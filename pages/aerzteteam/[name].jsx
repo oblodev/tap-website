@@ -70,7 +70,11 @@ function topMember({ data }) {
       <div className={styles.wrapper}>
         <div className={styles.infoImage}>
           <Image
-            src={teamMember.fotoSeite.url}
+            src={
+              teamMember.name === "Iris Eipeldauer"
+                ? teamMember.fotoSeite.url
+                : "https://media.graphassets.com/UzrT1BrJQEm6DRUNuo2F"
+            }
             alt="team-member-image"
             width={520}
             height={800}

@@ -20,7 +20,7 @@
     }
 
     .infoText {
-      flex: 0.5;
+      flex: 0.7;
 
       h3 {
         font-size: 1.85rem;
@@ -38,7 +38,7 @@
       }
 
       p {
-        width: 80%;
+        width: 90%;
         line-height: 1.5;
 
         @media screen and (max-width: 450px) {
@@ -63,7 +63,7 @@
     }
 
     .infoImage {
-      flex: 0.5;
+      flex: 0.3;
       box-shadow: 12px 12px #04436f;
       -moz-box-shadow: 12px 12px #04436f;
       -webkit-box-shadow: 12px 12px #04436f;

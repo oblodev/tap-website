@@ -2,51 +2,112 @@ import styles from "../styles/MopsInfoLeft.module.scss";
 import pug from "../public/images/pug.jpg";
 import Image from "next/image";
 import nase from "../public/images/Nase.jpg";
-
+import React from "react";
 import { motion } from "framer-motion";
 
-function MopsInfoLeft() {
+function MopsInfoLeft({ data }) {
+  console.log(data);
+
+  const getContentFragment = (index, text, obj, type) => {
+    let modifiedText = text;
+
+    if (obj) {
+      if (obj.bold) {
+        modifiedText = <b key={index}>{text}</b>;
+      }
+
+      if (obj.italic) {
+        modifiedText = <em key={index}>{text}</em>;
+      }
+
+      if (obj.underline) {
+        modifiedText = <u key={index}>{text}</u>;
+      }
+    }
+
+    switch (type) {
+      case "heading-three":
+        return (
+          <h3 key={index}>
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h3>
+        );
+      case "paragraph":
+        return (
+          <p key={index}>
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </p>
+        );
+      case "heading-four":
+        return (
+          <h4 key={index}>
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h4>
+        );
+      case "image":
+        return (
+          <Image
+            key={index}
+            alt={obj.title}
+            height={obj.height}
+            width={obj.width}
+            src={obj.src}
+          />
+        );
+      default:
+        return modifiedText;
+    }
+  };
+
   return (
     <div className={styles.infoContainer}>
-      <motion.div
-        className={styles.infoWrapper}
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 1 }}
-        id="atem"
-      >
-        <div className={styles.infoImage}>
-          <Image
-            src={nase}
-            alt="info-foto"
-            layout="responsive"
-            objectFit="cover"
-          />
-        </div>
-        <div className={styles.infoText}>
-          <h3>Atemnot</h3>
-          <h4>
-            Unterschiedliche anatomische Besonderheiten können zu Atemnot
-            führen.
-          </h4>
-          <p>
-            Brachycephalie, die Kurzköpfigkeit, und die damit verbundenen
-            Krankheiten unserer geliebten Knutschkugeln habe ich zu meinem
-            Spezialgebiet gemacht. Es gibt noch eine Reihe anderer Hunderassen,
-            welche keine kurze Schnauze habe, aber dennoch unter den für
-            brachycephale Rassen typtischen Erkrankungen leiden. Dazu gehören
-            z.b. Chihuahua, Staffordshire Terrier oder Norwich Terrier. Zur
-            Diagnosefindung ist in der Regel eine Endoskopie notwendig. Dadurch
-            können die Atemwege hochauflösend und direkt dargestellt werden. Oft
-            sind auch gleichzeitig mehrere Stellen der Atemwege verändert und
-            müssen korrigiert werden.
-          </p>
-          <p>
-            Probleme der Atemwege äußern sich nicht nur durch die eingeschränkte
-            Fähigkeit Luft zu bekommen. Es gibt noch weitere schwerwiegende
-            Einschränkungen.
-          </p>
-        </div>
-      </motion.div>
+      {data &&
+        data.map((leistung) => (
+          <motion.div
+            className={styles.infoWrapper}
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 1 }}
+            id="atem"
+          >
+            <div className={styles.infoImage}>
+              <Image
+                src={leistung.node.foto.url}
+                alt="info-foto"
+                layout="responsive"
+                objectFit="cover"
+                width={320}
+                height={260}
+              />
+            </div>
+            <div className={styles.infoText}>
+              <h3>{leistung.node.titel}</h3>
+              <h4>{leistung.node.kurzbeschreibung}</h4>
+              <p>
+                {" "}
+                {leistung.node.beschreibung.raw.children.map(
+                  (typeObj, index) => {
+                    const children = typeObj.children.map((item, itemIndex) =>
+                      getContentFragment(itemIndex, item.text, item)
+                    );
+
+                    return getContentFragment(
+                      index,
+                      children,
+                      typeObj,
+                      typeObj.type
+                    );
+                  }
+                )}
+              </p>
+            </div>
+          </motion.div>
+        ))}
     </div>
   );
 }

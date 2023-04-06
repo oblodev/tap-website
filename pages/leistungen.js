@@ -13,8 +13,11 @@ import img1 from "../public/images/img1.jpg";
 import img2 from "../public/images/img2.jpg";
 import img3 from "../public/images/img3.jpg";
 import intern from "../public/images/intern.jpg";
+import { getLeistungen } from "../services";
 
-function leistungen() {
+import Link from "next/link";
+
+function leistungen({ data }) {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -35,20 +38,22 @@ function leistungen() {
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
         >
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image src={img2} />
+          <Link href="/diagnostik">
+            <div className={styles.card}>
+              <div className={styles.cardImage}>
+                <Image src={img2} />
+              </div>
+              <div className={styles.heading}>
+                <h2>Diagnostik</h2>
+                <p>
+                  Eine genaue Diagnose unterschiedlicher Krankheitsbilder ist
+                  der erste Schritt in die richtige Richtung. Ein hausinternes
+                  Labor und viele weitere Möglichkeiten zur Diagnosestellung
+                  finden Sie direkt bei uns.{" "}
+                </p>
+              </div>
             </div>
-            <div className={styles.heading}>
-              <h2>Diagnostik</h2>
-              <p>
-                Eine genaue Diagnose unterschiedlicher Krankheitsbilder ist der
-                erste Schritt in die richtige Richtung. Ein hausinternes Labor
-                und viele weitere Möglichkeiten zur Diagnosestellung finden Sie
-                direkt bei uns.{" "}
-              </p>
-            </div>
-          </div>
+          </Link>
           <div className={styles.card}>
             <div className={styles.cardImage}>
               <Image src={img1} />
@@ -82,11 +87,7 @@ function leistungen() {
           </div>
         </motion.div>
         <KomplexLappen />
-        <InfoHeroRight />
-        <InfoHeroLeft />
-        <InfoHeroHigh />
       </div>
-      <Block />
     </div>
   );
 }

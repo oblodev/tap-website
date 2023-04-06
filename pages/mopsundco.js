@@ -9,8 +9,9 @@ import MopsInfoLeftSec from "../components/MopsInfoLeftSec";
 import KomplexLappen from "../components/KomplexLappen";
 
 import Link from "next/link";
+import { getLeistungenBully } from "../services";
 
-function mopsundco() {
+function mopsundco({ data }) {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -38,11 +39,10 @@ function mopsundco() {
         </div>
 
         <MopsIntro />
-        <MopsInfoLeft />
         <KomplexLappen />
 
-        <MopsInfoRight />
-        <MopsInfoLeftSec />
+        <MopsInfoLeft data={data} />
+
         <div className={styles.contact}>
           <div className={styles.contactWrapper}>
             <div className={styles.contactText}>
@@ -54,9 +54,8 @@ function mopsundco() {
               </p>
             </div>
             <div className={styles.contactHeader}>
-              <h3>Medizinische Betreuung</h3>
-              <Link href="/kontakt">
-                <button className={styles.contactBtn}>Kontakt</button>
+              <Link href="/leistungen">
+                <button className={styles.contactBtn}>Leistungen</button>
               </Link>
             </div>
           </div>
@@ -71,3 +70,13 @@ function mopsundco() {
 }
 
 export default mopsundco;
+
+export async function getStaticProps() {
+  const data = await getLeistungenBully();
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
