@@ -56,7 +56,7 @@ export const getChirurgie = async () => {
 export const getInterne = async () => {
   const query = gql`
     query Interne {
-      interneMedizinsConnection {
+      internesConnection {
         edges {
           node {
             titel
@@ -75,5 +75,5 @@ export const getInterne = async () => {
 
   const result = await request(graphqlAPI, query);
 
-  return result.interneMedizinsConnection.edges;
+  return result.internesConnection.edges;
 };

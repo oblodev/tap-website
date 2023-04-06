@@ -54,37 +54,40 @@ function leistungen({ data }) {
               </div>
             </div>
           </Link>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image src={img1} />
+          <Link href="/chirurgie">
+            <div className={styles.card}>
+              <div className={styles.cardImage}>
+                <Image src={img1} />
+              </div>
+              <div className={styles.heading}>
+                <h2>Chirurgie</h2>
+                <p>
+                  Unsere chirurgischen Eingriffe stützen sich auf den neuesten
+                  Stand der Technik. Sowohl die neuesten Geräte, wie auch unser
+                  Team aus Spezialisten sorgen für kompetente Beratung und
+                  Betreuung.
+                  <br />
+                  <br />
+                </p>
+              </div>
             </div>
-            <div className={styles.heading}>
-              <h2>Chirurgie</h2>
-              <p>
-                Unsere chirurgischen Eingriffe stützen sich auf den neuesten
-                Stand der Technik. Sowohl die neuesten Geräte, wie auch unser
-                Team aus Spezialisten sorgen für kompetente Beratung und
-                Betreuung.
-                <br />
-                <br />
-              </p>
+          </Link>
+          <Link href="/internemedizin">
+            <div className={styles.card}>
+              <div className={styles.cardImage}>
+                <Image src={intern} />
+              </div>
+              <div className={styles.heading}>
+                <h2>Interne Medizin</h2>
+                <p>
+                  Die interne Medizin ist die Königsdisziplin eines jeden
+                  Tierarztes. Durch genaue Analyse komplexer Fälle zeichnet sich
+                  unser Expertenteam aus. Mit entsprechender fachlicher
+                  Kompetenz und viel Geduld.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image src={intern} />
-            </div>
-            <div className={styles.heading}>
-              <h2>Interne Medizin</h2>
-              <p>
-                Die interne Medizin ist die Königsdisziplin eines jeden
-                Tierarztes. Durch genaue Analyse komplexer Fälle zeichnet sich
-                unser Expertenteam aus. Mit entsprechender fachlicher Kompetenz
-                und viel Geduld.
-              </p>
-            </div>
-          </div>
+          </Link>
         </motion.div>
         <KomplexLappen />
       </div>

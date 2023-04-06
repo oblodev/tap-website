@@ -196,29 +196,3 @@ export const getLeistungenBully = async () => {
 
   return result.leistungenBullysConnection.edges;
 };
-
-export const getLeistungen = async () => {
-  const query = gql`
-    query Leistungen {
-      leistungensConnection {
-        edges {
-          node {
-            titel
-            id
-            kurzbeschreibung
-            beschreibung {
-              raw
-            }
-            foto {
-              url
-            }
-          }
-        }
-      }
-    }
-  `;
-
-  const result = await request(graphqlAPI, query);
-
-  return result.leistungensConnection.edges;
-};
