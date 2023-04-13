@@ -38,7 +38,7 @@ function Footer() {
               <Link href="/mopsundco">Bully & Co.</Link>
             </li>
             <li>
-              <Link href="/dataenschutz">Datenschutz</Link>
+              <Link href="/datenschutz">Datenschutz</Link>
             </li>
           </ul>
           <ul>

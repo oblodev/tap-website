@@ -21,12 +21,10 @@ function Nav() {
         <div className={styles.navLinks}>
           <ul>
             <li>
-              <div className={styles.dropdown}>
-                <Link href="/leistungen">Leistungen</Link>{" "}
-                <div className={styles.dropdownContent}>
-                  <Link href="/komplexlappentechnik">Komplexlappentechnik</Link>
-                </div>
-              </div>
+              <Link href="/leistungen">Leistungen</Link>{" "}
+            </li>
+            <li>
+              <Link href="/komplexlappentechnik">Komplexlappentechnik</Link>
             </li>
             <li>
               <Link href="/team">Team</Link>
@@ -57,6 +55,9 @@ function Nav() {
               <ul>
                 <li onClick={() => setToggleSide(false)}>
                   <Link href="/leistungen">Leistungen</Link>{" "}
+                </li>
+                <li onClick={() => setToggleSide(false)}>
+                  <Link href="/komplexlappentechnik">Komplexlappentechnik</Link>
                 </li>
                 <li onClick={() => setToggleSide(false)}>
                   <Link href="/team">Team</Link>

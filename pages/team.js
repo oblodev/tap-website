@@ -45,16 +45,18 @@ function team({ data, dogData, christianIris }) {
         >
           {christianIris &&
             christianIris.map((member) => (
-              <Link href={`/aerzteteam/${member.node.name}`} key={member.id}>
+              <Link href={`/aerzteteam/${member.node.vorname}`} key={member.id}>
                 <div className={styles.teamMemberTop}>
                   <Image
                     src={member.node.foto.url}
                     alt="member-foto"
-                    width={320}
-                    height={460}
+                    width={260}
+                    height={400}
                   />
                   <div className={styles.teamMemberInfoTop}>
-                    <p className={styles.bold}>{member.node.name}</p>
+                    <p className={styles.bold}>
+                      {member.node.vorname} {member.node.nachname}
+                    </p>
                     <p>{member.node.position}</p>
                   </div>
                 </div>

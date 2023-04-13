@@ -71,7 +71,7 @@ function topMember({ data }) {
         <div className={styles.infoImage}>
           <Image
             src={
-              teamMember.name === "Iris Eipeldauer"
+              teamMember.vorname === "Iris"
                 ? teamMember.fotoSeite.url
                 : "https://media.graphassets.com/UzrT1BrJQEm6DRUNuo2F"
             }
@@ -82,7 +82,9 @@ function topMember({ data }) {
         </div>
         <div className={styles.info}>
           <div className={styles.header}>
-            <h2>{teamMember.name}</h2>
+            <h2>
+              {teamMember.vorname} {teamMember.nachname}
+            </h2>
             <p>{teamMember.position}</p>
           </div>{" "}
           <div>
@@ -114,7 +116,7 @@ function topMember({ data }) {
 export default topMember;
 
 export async function getStaticProps({ params }) {
-  const data = await getTopMemberDetails(params.name);
+  const data = await getTopMemberDetails(params.vorname);
 
   return {
     props: {
@@ -127,7 +129,7 @@ export async function getStaticPaths() {
   const member = await getTopMember();
 
   return {
-    paths: member.map(({ node: { name } }) => ({ params: { name } })),
+    paths: member.map(({ node: { vorname } }) => ({ params: { vorname } })),
     fallback: false,
   };
 }

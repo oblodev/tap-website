@@ -7,6 +7,7 @@ import Google from "../components/Google";
 import Link from "next/link";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { BsFillGeoAltFill } from "react-icons/bs";
+import Block from "../components/Block";
 
 function kontakt() {
   return (
@@ -88,6 +89,7 @@ function kontakt() {
           <Google />
         </div>
       </div>
+      <Block />
       <FloatingWhatsApp
         phoneNumber="436602750881"
         accountName="Tierarztpraxis Quehenberger"

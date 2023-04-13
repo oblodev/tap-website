@@ -123,7 +123,8 @@ export const getTopMember = async () => {
       christianIrisesConnection(orderBy: num_ASC) {
         edges {
           node {
-            name
+            vorname
+            nachname
             position
             num
             id
@@ -147,11 +148,12 @@ export const getTopMember = async () => {
   return result.christianIrisesConnection.edges;
 };
 
-export const getTopMemberDetails = async (name) => {
+export const getTopMemberDetails = async (vorname) => {
   const query = gql`
-    query GetTopMemberDetail($name: String!) {
-      christianIrises(where: { name: $name }) {
-        name
+    query GetTopMemberDetail($vorname: String!) {
+      christianIrises(where: { vorname: $vorname }) {
+        vorname
+        nachname
         position
         num
         id
@@ -167,7 +169,7 @@ export const getTopMemberDetails = async (name) => {
       }
     }
   `;
-  const result = await request(graphqlAPI, query, { name });
+  const result = await request(graphqlAPI, query, { vorname });
   return result.christianIrises;
 };
 
