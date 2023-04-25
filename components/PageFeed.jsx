@@ -5,6 +5,8 @@ import Image from "next/image";
 import loader from "../public/images/Eclipse-1s-200px.gif";
 import { ImFacebook2 } from "react-icons/im";
 
+import ersatz from "../public/images/bullie.jpg";
+
 const PageFeed = () => {
   const [feedData, setFeedData] = useState(null);
 
@@ -23,14 +25,20 @@ const PageFeed = () => {
             message: post.message,
             full_picture: post.full_picture,
             link: post.permalink_url,
-            video: post.attachments.data[0].media.source,
+            video:
+              post.attachments &&
+              post.attachments.data &&
+              post.attachments.data[0].media
+                ? post.attachments.data[0].media.source
+                : null,
           };
           posts.push(combinedData);
         }
+        console.log(posts + "POSTS");
         setFeedData(posts);
-        console.log(posts);
+        console.log(feedData);
       } catch (error) {
-        console.error(error);
+        console.error(error + "Test");
       }
     };
 
@@ -66,7 +74,14 @@ const PageFeed = () => {
                 </div>
               ) : (
                 <div className={styles.postImage}>
-                  <img src={post.full_picture} alt="Post-Image" />
+                  <img
+                    src={
+                      post.full_picture === undefined
+                        ? "/images/bullie.jpg"
+                        : post.full_picture
+                    }
+                    alt="Post-Image"
+                  />
                 </div>
               )}
               <p>{post.message}</p>
