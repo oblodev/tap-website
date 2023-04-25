@@ -11,12 +11,18 @@ import KomplexLappen from "../components/KomplexLappen";
 import Link from "next/link";
 import { getLeistungenBully } from "../services";
 
+import { motion } from "framer-motion";
+
 function mopsundco({ data }) {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.hero}>
-          <div className={styles.heroText}>
+          <motion.div
+            className={styles.heroText}
+            whileInView={{ y: [80, 0], opacity: [0, 1] }}
+            transition={{ duration: 1 }}
+          >
             <h2>Bully & Co.</h2>
             {/* <ul>
               <li>
@@ -35,7 +41,7 @@ function mopsundco({ data }) {
                 </Link>
               </li>
             </ul> */}
-          </div>
+          </motion.div>
         </div>
 
         <MopsIntro />

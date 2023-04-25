@@ -1,17 +1,23 @@
 import styles from "../styles/qualzucht.module.scss";
 
+import { motion } from "framer-motion";
+
 function qualzucht() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.header}>
+        <motion.div
+          className={styles.header}
+          whileInView={{ y: [80, 0], opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+        >
           <h1>Qualzucht</h1>
           <h2 className={styles.heading}>
             &quot;Kein Tier hat es verdient unter Qualzucht zu leiden. Wir als
             Menschen müssen Verantwortung übernehmen.&quot; - Christian
             Quehenberger
           </h2>
-        </div>
+        </motion.div>
         <div className={styles.info}>
           <div className={styles.infoText}>
             <p>

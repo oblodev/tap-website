@@ -17,14 +17,24 @@ function Block() {
       >
         <div className={styles.blockHeader}>
           <h3>Termine nach telefonischer Vereinbarung:</h3>
-          <p className={styles.blockTel}>
-            <FiPhoneCall className={styles.blockIcon} />{" "}
-            <Link href="tel:+43 2252 26 60 37">+43 2252 26 60 37</Link>
-          </p>
-          <p className={styles.blockTel}>
-            <ImWhatsapp className={styles.blockIcon} />{" "}
-            <Link href="https://wa.me/436602750881">+43 660 275 08 81</Link>
-          </p>
+          <div className={styles.wraping}>
+            <div className={styles.wrapLinks}>
+              <p className={styles.blockTel}>
+                <FiPhoneCall className={styles.blockIcon} />{" "}
+                <Link href="tel:+43 2252 26 60 37">+43 2252 26 60 37</Link>
+              </p>
+              <p className={styles.blockTel}>
+                <ImWhatsapp className={styles.blockIcon} />{" "}
+                <Link href="https://wa.me/436602750881">+43 660 275 08 81</Link>
+              </p>
+            </div>
+            <div className={styles.kontakt}>
+              <Link href="/kontakt">
+                <button className={styles.btnC}>Kontakt</button>
+              </Link>
+            </div>
+          </div>
+
           <p className={styles.blockMail}>
             <HiOutlineMail className={styles.blockIcon} />{" "}
             <a href="mailto: office@tierarztpraxis-quehenberger.at">
@@ -32,6 +42,7 @@ function Block() {
             </a>
           </p>
         </div>
+
         <div className={styles.blockLogo}>
           <Image src={logoWeiss} width="420px" height="280px" />
         </div>

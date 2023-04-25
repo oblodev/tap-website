@@ -1,16 +1,22 @@
 import styles from "../styles/komplex.module.scss";
 import Fragen from "../components/Fragen";
 
+import { motion } from "framer-motion";
+
 function komplexlappentechnik() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.header}>
+        <motion.div
+          className={styles.header}
+          whileInView={{ y: [80, 0], opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+        >
           <h1>Komplexlappentechnik®</h1>
           <p>Einzigartig auf dem Gebiet der Atemwegschirurgie</p>
-        </div>
+        </motion.div>
         <div className={styles.heroes}>
-          <h2>Komplexlappentechnik-Verlauf</h2>
+          <h2>Unser Ablauf</h2>
           <div className={styles.hero}>
             <h3>Voruntersuchung</h3>
             <p>

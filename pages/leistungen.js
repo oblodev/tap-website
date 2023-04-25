@@ -9,7 +9,7 @@ import KomplexLappen from "../components/KomplexLappen";
 
 import { motion } from "framer-motion";
 
-import img1 from "../public/images/img1.jpg";
+import img1 from "../public/images/Chirurgie.jpg";
 import img2 from "../public/images/img2.jpg";
 import img3 from "../public/images/img3.jpg";
 import intern from "../public/images/intern.jpg";

@@ -84,7 +84,7 @@
 
       .teamMemberTop {
         width: 280px;
-        height: 600px;
+        height: 420px;
         cursor: pointer;
         transition: 0.4s all ease-in-out;
 
@@ -263,4 +263,9 @@
       }
     }
   }
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 0;
 }

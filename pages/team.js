@@ -50,19 +50,17 @@ function team({ data, dogData, christianIris }) {
                   <Image
                     src={member.node.foto.url}
                     alt="member-foto"
-                    width={260}
+                    width={240}
                     height={400}
                   />
-                  <div className={styles.teamMemberInfoTop}>
-                    <p className={styles.bold}>
-                      {member.node.vorname} {member.node.nachname}
-                    </p>
-                    <p>{member.node.position}</p>
-                  </div>
+                  <div className={styles.teamMemberInfoTop}></div>
                 </div>
               </Link>
             ))}
         </motion.div>
+
+        <p className={styles.bold}>Mag. Iris und Christian Quehenberger</p>
+        <p>Tierärzte und Praxisinhaber</p>
 
         {/* Team-Section */}
 

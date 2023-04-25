@@ -24,9 +24,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FullTeam />
-      <Hero />
-      <PageFeed />
       <Block />
+      <PageFeed />
       <FloatingWhatsApp
         phoneNumber="436602750881"
         accountName="Tierarztpraxis Quehenberger"

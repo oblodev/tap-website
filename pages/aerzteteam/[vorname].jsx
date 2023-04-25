@@ -76,7 +76,7 @@ function topMember({ data }) {
                 : "https://media.graphassets.com/UzrT1BrJQEm6DRUNuo2F"
             }
             alt="team-member-image"
-            width={520}
+            width={540}
             height={800}
           />
         </div>
