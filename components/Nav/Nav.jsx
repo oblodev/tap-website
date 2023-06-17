@@ -65,9 +65,9 @@ function Nav() {
                 <li onClick={() => setToggleSide(false)}>
                   <Link href="/mopsundco">Bully & Co.</Link>
                 </li>
-                <li onClick={() => setToggleSide(false)}>
+                {/* <li onClick={() => setToggleSide(false)}>
                   <Link href="/videos">Videos</Link>
-                </li>
+                </li> */}
                 <li onClick={() => setToggleSide(false)}>
                   <Link href="/qualzucht">Qualzucht</Link>
                 </li>

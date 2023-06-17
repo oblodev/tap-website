@@ -22,7 +22,7 @@ function Kontakt() {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "f64f13e1-33e7-4392-9913-c4bf54594b6a");
+    formData.append("access_key", "526f53df-c006-4b33-8ef7-85b3eb400b84");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -94,7 +94,7 @@ function Kontakt() {
               <input
                 type="text"
                 placeholder="Name"
-                name="name"
+                name="Name"
                 value={fullname}
                 onChange={(e) => {
                   setFullname(e.target.value);
@@ -104,7 +104,7 @@ function Kontakt() {
               <input
                 type="email"
                 placeholder="Email"
-                name="email"
+                name="Email"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
@@ -114,7 +114,7 @@ function Kontakt() {
               <input
                 type="text"
                 placeholder="Telefon"
-                name="telefon"
+                name="Telefon"
                 value={telefon}
                 onChange={(e) => {
                   setTelefon(e.target.value);
@@ -131,7 +131,7 @@ function Kontakt() {
             </div>
             <div className={styles.kontaktMSg}>
               <textarea
-                name="message"
+                name="Nachricht"
                 type="text"
                 placeholder="Ihre Nachricht an uns"
                 value={message}

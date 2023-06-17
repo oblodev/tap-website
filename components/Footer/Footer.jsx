@@ -42,9 +42,9 @@ function Footer() {
             </li>
           </ul>
           <ul>
-            <li>
+            {/* <li>
               <Link href="/videos">Videos</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/kontakt">Kontakt</Link>
             </li>
