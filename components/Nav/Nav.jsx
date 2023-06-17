@@ -35,9 +35,9 @@ function Nav() {
             <li>
               <Link href="/qualzucht">Qualzucht</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/videos">Videos</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/kontakt">Kontakt</Link>
             </li>

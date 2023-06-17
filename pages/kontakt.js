@@ -9,7 +9,43 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { BsFillGeoAltFill } from "react-icons/bs";
 import Block from "../components/Block";
 
+import { useState } from "react";
+
 function kontakt() {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefon, setTelefon] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState("");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "f64f13e1-33e7-4392-9913-c4bf54594b6a");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    });
+    const result = await response.json();
+    if (result.success) {
+      console.log(result);
+      setFullname("");
+      setEmail("");
+      setMessage("");
+      setTelefon("");
+      setSuccess("Wir haben Ihre Nachricht erhalten");
+    }
+  }
+
   return (
     <div className={styles.container}>
       <motion.div
@@ -52,22 +88,62 @@ function kontakt() {
           </p>
         </div>
         <div className={styles.kontaktForm}>
-          <div className={styles.kontaktCard}>
+          <form className={styles.kontaktCard} onSubmit={handleSubmit}>
             <h3>Ihre Nachricht an uns:</h3>
             <div className={styles.kontaktInputs}>
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="Telefon" />
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={fullname}
+                onChange={(e) => {
+                  setFullname(e.target.value);
+                }}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Telefon"
+                name="telefon"
+                value={telefon}
+                onChange={(e) => {
+                  setTelefon(e.target.value);
+                }}
+                required
+              />
+
+              <input
+                type="checkbox"
+                name="botcheck"
+                className="hidden"
+                style={{ display: "none" }}
+              ></input>
             </div>
             <div className={styles.kontaktMSg}>
               <textarea
                 name="message"
                 type="text"
-                placeholder="Nachricht"
+                placeholder="Ihre Nachricht an uns"
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+                required
               ></textarea>
-              <button>Senden</button>
+              <button type="submit">Senden</button>
+              <div className={styles.success}>{success}</div>
             </div>
-          </div>
+          </form>
         </div>
       </motion.div>
       <TeamImage />

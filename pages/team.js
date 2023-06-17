@@ -50,8 +50,8 @@ function team({ data, dogData, christianIris }) {
                   <Image
                     src={member.node.foto.url}
                     alt="member-foto"
-                    width={240}
-                    height={400}
+                    width={216}
+                    height={370}
                   />
                   <div className={styles.teamMemberInfoTop}></div>
                 </div>
@@ -76,8 +76,8 @@ function team({ data, dogData, christianIris }) {
                   <Image
                     src={member.node.foto.url}
                     alt="member-foto"
-                    width={320}
-                    height={460}
+                    width={280}
+                    height={400}
                   />
                   <div className={styles.teamMemberInfo}>
                     <p className={styles.bold}>{member.node.name}</p>
@@ -97,7 +97,7 @@ function team({ data, dogData, christianIris }) {
                       <Image
                         src={dog.node.foto.url}
                         alt="dog-member-foto"
-                        width={420}
+                        width={480}
                         height={400}
                         objectFit="cover"
                       />
