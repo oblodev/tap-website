@@ -11,7 +11,7 @@ import Block from "../components/Block";
 
 import { useState } from "react";
 
-function kontakt() {
+function Kontakt() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [telefon, setTelefon] = useState("");
@@ -179,4 +179,4 @@ function kontakt() {
   );
 }
 
-export default kontakt;
+export default Kontakt;
