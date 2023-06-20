@@ -51,7 +51,10 @@ function Footer() {
           </ul>
         </div>
         <div className={styles.footerBottom}>
-          <p>Tierarztpraxis Quehenberger {year} © </p>
+          <p>
+            Tierarztpraxis Quehenberger {year} ©{" "}
+            <span>created by NetCreators.io</span>
+          </p>
           <div className={styles.footerIcons}>
             <div className={styles.footerIconFb}>
               <a
