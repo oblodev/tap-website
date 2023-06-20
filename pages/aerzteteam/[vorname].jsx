@@ -77,7 +77,7 @@ function topMember({ data }) {
             }
             alt="team-member-image"
             width={520}
-            height={780}
+            height={720}
           />
         </div>
         <div className={styles.info}>
