@@ -73,11 +73,11 @@ function topMember({ data }) {
             src={
               teamMember.vorname === "Iris"
                 ? teamMember.fotoSeite.url
-                : "https://media.graphassets.com/UzrT1BrJQEm6DRUNuo2F"
+                : "https://media.graphassets.com/9jJqvjURESn31veKsQab"
             }
             alt="team-member-image"
-            width={520}
-            height={720}
+            width={460}
+            height={680}
           />
         </div>
         <div className={styles.info}>
