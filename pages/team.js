@@ -50,8 +50,8 @@ function team({ data, dogData, christianIris }) {
                   <Image
                     src={member.node.foto.url}
                     alt="member-foto"
-                    width={225}
-                    height={400}
+                    width={400}
+                    height={600}
                   />
                   <div className={styles.teamMemberInfoTop}></div>
                 </div>
@@ -76,8 +76,8 @@ function team({ data, dogData, christianIris }) {
                   <Image
                     src={member.node.foto.url}
                     alt="member-foto"
-                    width={280}
-                    height={400}
+                    width={400}
+                    height={600}
                   />
                   <div className={styles.teamMemberInfo}>
                     <p className={styles.bold}>{member.node.name}</p>
