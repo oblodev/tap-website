@@ -26,7 +26,7 @@ export default function Home() {
       <FullTeam />
       <Block />
       <PageFeed />
-      <FloatingWhatsApp
+      {/* <FloatingWhatsApp
         phoneNumber="436602750881"
         accountName="Tierarztpraxis Quehenberger"
         chatMessage="Willkommen! 
@@ -34,8 +34,7 @@ export default function Home() {
         statusMessage="Whatsapp"
         messageDelay={1.5}
         notificationDelay={5}
-        avatar={faceWA}
-      />
+      /> */}
     </div>
   );
 }
