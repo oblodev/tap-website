@@ -71,8 +71,8 @@ function teamMember({ data }) {
           <Image
             src={teamMember.foto.url}
             alt="team-member-image"
-            width={520}
-            height={420}
+            width={teamMember.name === "Nils" ? 640 : 520}
+            height={teamMember.name === "Nils" ? 427 : 420}
           />
         </div>
         <div className={styles.info}>
