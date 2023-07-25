@@ -90,11 +90,16 @@
 
       @media screen and (max-width: 450px) {
         font-size: 0.925rem;
+        width: 400px;
       }
 
       .postVideo {
         video {
           width: 640px;
+        }
+
+        @media screen and (max-width: 450px) {
+          width: 400px;
         }
       }
 
@@ -102,6 +107,10 @@
         img {
           width: 640px;
           height: 368px;
+
+          @media screen and (max-width: 450px) {
+            width: 400px;
+          }
         }
       }
     }

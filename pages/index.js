@@ -14,6 +14,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 import PageFeed from "../components/PageFeed";
 
 import faceWA from "../public/images/face.jpg";
+import Urlaub from "../components/Urlaub";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <meta name="description" content="Tierpraxis Quehenberger - Webseite" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Urlaub />
       <FullTeam />
       <Block />
       <PageFeed />

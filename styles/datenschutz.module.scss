@@ -2,10 +2,25 @@
   max-width: 1200px;
   margin: auto;
 
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
     padding: 1rem;
+
+    @media screen and (max-width: 450px) {
+      padding: 0.5rem;
+    }
+
+    h1 {
+      @media screen and (max-width: 450px) {
+        font-size: 1.5rem;
+        padding: 0;
+      }
+    }
   }
 }

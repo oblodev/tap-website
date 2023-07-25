@@ -77,7 +77,7 @@ const PageFeed = () => {
                   <img
                     src={
                       post.full_picture === undefined
-                        ? "/images/bullie.jpg"
+                        ? "/images/bully-logo.jpg"
                         : post.full_picture
                     }
                     alt="Post-Image"
