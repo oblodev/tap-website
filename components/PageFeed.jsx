@@ -63,7 +63,7 @@ const PageFeed = () => {
       </div>
 
       <div className={styles.feed}>
-        {feedData.slice(0, 3).map((post) => (
+        {feedData.slice(0, 4).map((post) => (
           <Link href={post.link} key={post.id}>
             <div className={styles.postCard}>
               {post.video ? (
