@@ -39,7 +39,7 @@ export default function Home() {
         messageDelay={1.5}
         notificationDelay={5}
       /> */}
-      <CookieConsent
+      {/* <CookieConsent
         location="bottom"
         buttonText="Akzeptieren"
         cookieName="myAwesomeCookieName2"
@@ -53,7 +53,7 @@ export default function Home() {
           Funktionen für soziale Medien anbieten zu können und die Zugriffe auf
           unsere Website zu analysieren.
         </span>
-      </CookieConsent>
+      </CookieConsent> */}
     </div>
   );
 }
