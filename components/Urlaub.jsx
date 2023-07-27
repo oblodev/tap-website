@@ -12,8 +12,12 @@ function Urlaub() {
         <h2>Wir sind im Urlaub!</h2>
         <p>
           {" "}
-          Wir haben die Ordination vom 29.07 bis 15.08.2023 wegen Urlaub
-          geschlossen.
+          Dr.Bully und sein Team sind von <b>29. Juli - 15. August 2023</b> auf
+          Urlaub und die Ordination ist geschlossen. Wir bitten um Verständnis,
+          dass daher keine Anfragen beantwortet werden können. In dringenden
+          Notfällen suchen Sie bitte eine Tierarztpraxis in Ihrer Nähe auf. Wir
+          kümmern uns um Ihr Anliegen nach dem Urlaub. <br /> <br /> Liebe Grüße
+          Dr. Bully und sein Team!
         </p>
       </motion.div>
     </div>
