@@ -23,7 +23,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Tierarztpraxis Quehenberger</title>
-        <meta name="description" content="Tierpraxis Quehenberger - Webseite" />
+        <meta
+          name="description"
+          content="Tierpraxis Quehenberger - Willkommen beim Dr. Bully!"
+        />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Urlaub />
