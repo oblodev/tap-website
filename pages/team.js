@@ -54,13 +54,19 @@ function team({ data, dogData, christianIris }) {
                     height={600}
                   />
                   <div className={styles.teamMemberInfoTop}></div>
+                  <p className={styles.mobileText}>
+                    {member.node.vorname} {member.node.nachname}
+                  </p>
+                  <p className={styles.infoText}>{member.node.mobileText}</p>
                 </div>
               </Link>
             ))}
         </motion.div>
 
-        <p className={styles.bold}>Mag. Iris und Christian Quehenberger</p>
-        <p>Tierärzte und Praxisinhaber</p>
+        <p className={styles.desktopText}>
+          Mag. Iris und Christian Quehenberger
+        </p>
+        <p className={styles.info}>Tierärzte und Praxisinhaber</p>
 
         {/* Team-Section */}
 

@@ -88,6 +88,11 @@
         cursor: pointer;
         transition: 0.4s all ease-in-out;
 
+        @media screen and (max-width: 450px) {
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+        }
+
         .teamMemberInfoTop {
           width: 100%;
           text-align: center;
@@ -104,6 +109,26 @@
         .teamMemberInfoTop:last-child {
           margin-left: -2rem;
         }
+
+        .mobileText {
+          font-weight: 700;
+          text-align: center;
+          display: none;
+
+          @media screen and (max-width: 450px) {
+            display: block;
+          }
+        }
+
+        .infoText {
+          font-weight: 500;
+          text-align: center;
+          display: none;
+
+          @media screen and (max-width: 450px) {
+            display: block;
+          }
+        }
       }
 
       .teamMemberTop:hover {
@@ -112,8 +137,22 @@
 
       .teamMemberTop:last-child {
         @media screen and (max-width: 450px) {
-          margin-left: 2.5rem;
+          margin-bottom: 8rem;
         }
+      }
+    }
+
+    .desktopText {
+      font-weight: 700;
+
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+    }
+
+    .info {
+      @media screen and (max-width: 450px) {
+        display: none;
       }
     }
 

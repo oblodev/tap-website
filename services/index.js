@@ -125,6 +125,7 @@ export const getTopMember = async () => {
           node {
             vorname
             nachname
+            mobileText
             position
             num
             id
