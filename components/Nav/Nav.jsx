@@ -15,7 +15,7 @@ function Nav() {
       <div className={styles.navWrapper}>
         <div className={styles.navLogo}>
           <Link href="/">
-            <Image src={logo} />
+            <Image src={logo} alt="bully-logo" />
           </Link>
         </div>
         <div className={styles.navLinks}>

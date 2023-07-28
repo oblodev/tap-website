@@ -13,7 +13,7 @@ function Footer() {
         <div className={styles.footerHeader}>
           <div className={styles.footerHeaderTag}>
             <h2>Tierarztpraxis Quehenberger</h2>
-            <Image src={bully} width="66px" height="40px" />
+            <Image src={bully} width="66px" height="40px" alt="logo-bully" />
           </div>
         </div>
         <div className={styles.footerLinks}>

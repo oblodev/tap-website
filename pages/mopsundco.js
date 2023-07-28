@@ -67,7 +67,7 @@ function mopsundco({ data }) {
           </div>
 
           <div className={styles.logo}>
-            <Image src={weiss} />
+            <Image src={weiss} alt="bully-logo-hell" />
           </div>
         </div>
       </div>

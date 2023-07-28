@@ -41,7 +41,7 @@ function leistungen({ data }) {
           <Link href="/diagnostik">
             <div className={styles.card}>
               <div className={styles.cardImage}>
-                <Image src={img2} />
+                <Image src={img2} alt="diagnostik-foto" />
               </div>
               <div className={styles.heading}>
                 <h2>Diagnostik</h2>
@@ -57,7 +57,7 @@ function leistungen({ data }) {
           <Link href="/chirurgie">
             <div className={styles.card}>
               <div className={styles.cardImage}>
-                <Image src={img1} />
+                <Image src={img1} alt="chirurgie-foto" />
               </div>
               <div className={styles.heading}>
                 <h2>Chirurgie</h2>
@@ -75,7 +75,7 @@ function leistungen({ data }) {
           <Link href="/internemedizin">
             <div className={styles.card}>
               <div className={styles.cardImage}>
-                <Image src={intern} />
+                <Image src={intern} alt="internemedizin-foto" />
               </div>
               <div className={styles.heading}>
                 <h2>Interne Medizin</h2>

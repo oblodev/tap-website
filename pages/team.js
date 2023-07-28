@@ -49,7 +49,7 @@ function team({ data, dogData, christianIris }) {
                 <div className={styles.teamMemberTop}>
                   <Image
                     src={member.node.foto.url}
-                    alt="member-foto"
+                    alt={`${member.node.vorname}-member-foto`}
                     width={400}
                     height={600}
                   />
@@ -81,7 +81,7 @@ function team({ data, dogData, christianIris }) {
                 <div className={styles.teamMember}>
                   <Image
                     src={member.node.foto.url}
-                    alt="member-foto"
+                    alt={`${member.node.vorname}-member-foto`}
                     width={400}
                     height={600}
                   />

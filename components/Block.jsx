@@ -44,7 +44,12 @@ function Block() {
         </div>
 
         <div className={styles.blockLogo}>
-          <Image src={logoWeiss} width="420px" height="280px" />
+          <Image
+            src={logoWeiss}
+            width="420px"
+            height="280px"
+            alt="bully-logo"
+          />
         </div>
       </motion.div>
     </div>

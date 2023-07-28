@@ -25,7 +25,7 @@ export default function Home() {
         <title>Tierarztpraxis Quehenberger</title>
         <meta
           name="description"
-          content="Tierpraxis Quehenberger - Willkommen beim Dr. Bully!"
+          content="Tierarztpraxis Quehenberger - Willkommen beim Dr. Bully!"
         />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>

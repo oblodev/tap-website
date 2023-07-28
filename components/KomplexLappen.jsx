@@ -13,7 +13,12 @@ function KomplexLappen() {
         </div>
         <div className={styles.button}>
           <div className={styles.logo}>
-            <Image src={logoWeiss} width="300px" height="180px" />
+            <Image
+              src={logoWeiss}
+              width="300px"
+              height="180px"
+              alt="komplexlappentechnik-bully-logo"
+            />
           </div>
           <Link href="/komplexlappentechnik">
             <button>Mehr Erfahren</button>
