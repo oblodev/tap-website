@@ -16,7 +16,9 @@ function Block() {
         transition={{ duration: 0.8 }}
       >
         <div className={styles.blockHeader}>
-          <h3>Termine nach telefonischer Vereinbarung:</h3>
+          <h3>
+            Termine von Montag bis Freitag nach telefonischer Vereinbarung:{" "}
+          </h3>
           <div className={styles.wraping}>
             <div className={styles.wrapLinks}>
               <p className={styles.blockTel}>
@@ -41,6 +43,7 @@ function Block() {
               office@tierarztpraxis-quehenberger.at
             </a>
           </p>
+          <h3>Kein Nacht - und Wochenenddienst! </h3>
         </div>
 
         <div className={styles.blockLogo}>

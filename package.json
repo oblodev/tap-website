@@ -1,6 +1,6 @@
 {
   "name": "tap-website",
-  "version": "0.9.6",
+  "version": "1.0.6",
   "private": true,
   "scripts": {
     "dev": "next dev",
