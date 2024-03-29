@@ -12,7 +12,7 @@ function Urlaub() {
         {/* <h2>Wir sind im Urlaub!</h2> */}
         <p>
           {" "}
-          Von <b>29.03.2024</b> bis einschliesslich 01.04.2024 ist die
+          Von <strong>29.03.2024 bis einschliesslich 01.04.2024</strong> ist die
           Ordination geschlossen. Wir bitten um Verständnis.
           <br /> <br /> Liebe Grüße Dr. Bully und sein Team!
         </p>
