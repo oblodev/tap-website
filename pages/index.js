@@ -29,7 +29,7 @@ export default function Home() {
         />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
-      <Urlaub />
+      {/* <Urlaub /> */}
       <FullTeam />
       <Block />
       <PageFeed />
