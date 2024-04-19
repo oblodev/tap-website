@@ -53,7 +53,9 @@ function Footer() {
         <div className={styles.footerBottom}>
           <p>
             Tierarztpraxis Quehenberger {year} ©{" "}
-            <span>created by NetCreators.io</span>
+            <span>
+              created by <a href="https://netcreators.io">NetCreators.io</a>{" "}
+            </span>
           </p>
           <div className={styles.footerIcons}>
             <div className={styles.footerIconFb}>
