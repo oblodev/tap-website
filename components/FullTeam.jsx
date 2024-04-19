@@ -1,5 +1,5 @@
 import styles from "../styles/FullTeam.module.scss";
-import team from "../public/images/fullTeam.jpg";
+import team from "../public/images/quehenberger_team_2024.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
