@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import team from "../public/images/fullTeam.jpg";
+import team from "../public/images/quehenberger_team_2024.jpg";
 import styles from "../styles/TeamImage.module.scss";
 import { motion } from "framer-motion";
 
