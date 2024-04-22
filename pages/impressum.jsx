@@ -12,6 +12,7 @@ function impressum() {
           Vöslauer Straße 63 / Top 2 <br />
           2500 Baden
         </p>
+        <p>FN 597518 d</p>
         <h2>Kontakt:</h2>
         <p>
           Telefon: +43 2252 26 60 37 <br />
