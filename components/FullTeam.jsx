@@ -14,7 +14,7 @@ function FullTeam() {
       >
         <h1>Tierarztpraxis Quehenberger Dr. Bully®</h1>
         <p>Ihre Tierarztpraxis in Baden bei Wien</p>
-        <Image src={team} alt="Full-Team" />
+        <Image src={team} alt="Tierarztpraxis Quehenberger Team" />
       </motion.div>
       <motion.div
         className={styles.heroText}

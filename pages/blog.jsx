@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 function blog({ posts }) {
-  console.log(posts);
+  // console.log(posts);
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>

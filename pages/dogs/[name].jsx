@@ -6,7 +6,6 @@ import { getDogMember, getDogMemberDetails } from "../../services";
 
 function teamMember({ data }) {
   const teamMember = data[0];
-  console.log(data);
 
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;

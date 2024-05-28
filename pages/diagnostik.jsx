@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function diagnostik({ data }) {
-  console.log(data);
-
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 

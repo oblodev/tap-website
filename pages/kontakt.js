@@ -37,7 +37,6 @@ function Kontakt() {
     });
     const result = await response.json();
     if (result.success) {
-      console.log(result);
       setFullname("");
       setEmail("");
       setMessage("");

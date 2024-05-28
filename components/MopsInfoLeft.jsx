@@ -6,8 +6,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 function MopsInfoLeft({ data }) {
-  console.log(data);
-
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 

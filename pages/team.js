@@ -9,9 +9,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 function team({ data, dogData, christianIris }) {
-  console.log(data);
-  console.log(dogData);
-  console.log(christianIris);
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>

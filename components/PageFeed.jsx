@@ -17,7 +17,7 @@ const PageFeed = () => {
         const url = `/api/hello`;
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
+
         const posts = [];
         for (const post of data.data) {
           const combinedData = {
@@ -34,9 +34,8 @@ const PageFeed = () => {
           };
           posts.push(combinedData);
         }
-        console.log(posts + "POSTS");
+
         setFeedData(posts);
-        console.log(feedData);
       } catch (error) {
         console.error(error + "Test");
       }

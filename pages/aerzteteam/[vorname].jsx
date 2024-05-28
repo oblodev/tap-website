@@ -7,7 +7,6 @@ import { getTopMember, getTopMemberDetails } from "../../services";
 
 function topMember({ data }) {
   const teamMember = data[0];
-  console.log(teamMember);
 
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
