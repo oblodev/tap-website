@@ -7,7 +7,7 @@ import InfoHero from "../components/InfoHero";
 import Block from "../components/Block";
 import FullTeam from "../components/FullTeam";
 
-import { getTeamMember } from "../services";
+import { getTeamFoto, getTeamMember, getUrlaub } from "../services";
 import { getBlogPost } from "../services/blogService";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
@@ -18,7 +18,9 @@ import Urlaub from "../components/Urlaub";
 
 import CookieConsent from "react-cookie-consent";
 
-export default function Home() {
+export default function Home({ data, urlaub }) {
+  console.log(urlaub);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -29,8 +31,10 @@ export default function Home() {
         />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
-      {/* <Urlaub /> */}
-      <FullTeam />
+
+      {urlaub[0].node.urlaub === true ? <Urlaub urlaub={urlaub} /> : null}
+      {/* <Urlaub urlaub={urlaub} /> */}
+      <FullTeam data={data} />
       <Block />
       <PageFeed />
       {/* <FloatingWhatsApp
@@ -59,4 +63,16 @@ export default function Home() {
       </CookieConsent> */}
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const data = (await getTeamFoto()) || [];
+  const urlaub = (await getUrlaub()) || [];
+
+  return {
+    props: {
+      data,
+      urlaub,
+    },
+  };
 }

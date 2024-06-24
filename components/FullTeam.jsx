@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-function FullTeam() {
+function FullTeam({ data }) {
   return (
     <div className={styles.container}>
       <motion.div
@@ -14,7 +14,12 @@ function FullTeam() {
       >
         <h1>Tierarztpraxis Quehenberger Dr. Bully®</h1>
         <p>Ihre Tierarztpraxis in Baden bei Wien</p>
-        <Image src={team} alt="Tierarztpraxis Quehenberger Team" />
+        <Image
+          src={data[0].node.teamFoto.url}
+          alt="Tierarztpraxis Quehenberger Team"
+          width={1400}
+          height={420}
+        />
       </motion.div>
       <motion.div
         className={styles.heroText}

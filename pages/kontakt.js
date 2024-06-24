@@ -10,8 +10,9 @@ import { BsFillGeoAltFill } from "react-icons/bs";
 import Block from "../components/Block";
 
 import { useState } from "react";
+import { getTeamFoto } from "../services";
 
-function Kontakt() {
+function Kontakt({ data }) {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [telefon, setTelefon] = useState("");
@@ -145,7 +146,7 @@ function Kontakt() {
           </form>
         </div>
       </motion.div>
-      <TeamImage />
+      <TeamImage data={data} />
       <div className={styles.google}>
         <div className={styles.geoGoogle}>
           <h3>Unsere Adresse:</h3>
@@ -179,3 +180,13 @@ function Kontakt() {
 }
 
 export default Kontakt;
+
+export async function getStaticProps() {
+  const data = (await getTeamFoto()) || [];
+
+  return {
+    props: {
+      data,
+    },
+  };
+}

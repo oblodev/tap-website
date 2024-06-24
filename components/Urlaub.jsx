@@ -1,7 +1,7 @@
 import styles from "../styles/Urlaub.module.scss";
 import { motion } from "framer-motion";
 
-function Urlaub() {
+function Urlaub({ urlaub }) {
   return (
     <div className={styles.urlaub}>
       <motion.div
@@ -10,12 +10,7 @@ function Urlaub() {
         transition={{ duration: 0.75 }}
       >
         {/* <h2>Wir sind im Urlaub!</h2> */}
-        <p>
-          {" "}
-          Von <strong>29.03.2024 bis einschließlich 01.04.2024</strong> ist die
-          Ordination geschlossen. Wir bitten um Verständnis.
-          <br /> <br /> Liebe Grüße Dr. Bully und sein Team!
-        </p>
+        <p>{urlaub[0].node.urlaubmeldung.text}</p>
       </motion.div>
     </div>
   );

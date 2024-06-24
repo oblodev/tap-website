@@ -52,6 +52,8 @@ const PageFeed = () => {
     );
   }
 
+  console.log(feedData);
+
   return (
     <div className={styles.container}>
       <div className={styles.feedHeader}>

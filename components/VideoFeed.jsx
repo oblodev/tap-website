@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { AiFillYoutube } from "react-icons/ai";
 
 function VideoFeed({ data }) {
-  // console.log(data);
+  console.log("HALLO", data);
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function VideoFeed({ data }) {
         },
       });
       setVideos(data.items);
-      console.log(data.items);
+      console.log("HREE", data.items);
     };
     fetchData();
   }, []);

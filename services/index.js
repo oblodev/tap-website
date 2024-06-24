@@ -199,3 +199,44 @@ export const getLeistungenBully = async () => {
 
   return result.leistungenBullysConnection.edges;
 };
+
+export const getTeamFoto = async () => {
+  const query = gql`
+    query TeamFoto {
+      teamFotosConnection {
+        edges {
+          node {
+            teamFoto {
+              url
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.teamFotosConnection.edges;
+};
+
+export const getUrlaub = async () => {
+  const query = gql`
+    query Urlaub {
+      urlaubsConnection {
+        edges {
+          node {
+            urlaubAnzeigen
+            urlaubmeldung {
+              text
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.urlaubsConnection.edges;
+};
