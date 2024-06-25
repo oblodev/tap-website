@@ -228,7 +228,7 @@ export const getUrlaub = async () => {
           node {
             urlaubAnzeigen
             urlaubmeldung {
-              text
+              raw
             }
           }
         }
