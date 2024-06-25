@@ -1,5 +1,6 @@
 import styles from "../styles/Urlaub.module.scss";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 
 function Urlaub({ urlaub }) {
