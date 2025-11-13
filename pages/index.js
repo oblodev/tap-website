@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/Hero";
 import InfoHero from "../components/InfoHero";
@@ -11,12 +12,20 @@ import PageFeed from "../components/PageFeed";
 import faceWA from "../public/images/face.jpg";
 import Urlaub from "../components/Urlaub";
 import CookieConsent from "react-cookie-consent";
+import InsuranceModal from "../components/InsuranceModal";
 
 export default function Home({ data, urlaub }) {
   console.log(urlaub);
 
   const isUrlaub =
     urlaub.length > 0 && urlaub[0]?.node?.urlaubAnzeigen === true;
+  const [showInsuranceModal, setShowInsuranceModal] = useState(false);
+
+  useEffect(() => {
+    setShowInsuranceModal(true);
+  }, []);
+
+  const handleCloseInsuranceModal = () => setShowInsuranceModal(false);
 
   return (
     <div className={styles.container}>
@@ -29,6 +38,10 @@ export default function Home({ data, urlaub }) {
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
+      <InsuranceModal
+        open={showInsuranceModal}
+        onClose={handleCloseInsuranceModal}
+      />
       {isUrlaub && <Urlaub urlaub={urlaub} />}
       <FullTeam data={data} />
       <Block />

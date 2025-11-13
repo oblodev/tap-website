@@ -19,6 +19,14 @@ function Block() {
           <h3>
             Termine von Montag bis Freitag nach telefonischer Vereinbarung:{" "}
           </h3>
+          <p className={styles.infoNote}>
+            Dr. Bullys Versicherungscheck – senden Sie uns Ihre
+            Vertragsunterlagen an{" "}
+            <a href="mailto:office@tierarztpraxis-quehenberger.at">
+              office@tierarztpraxis-quehenberger.at
+            </a>{" "}
+            und wir prüfen die Kostenübernahme.
+          </p>
           <div className={styles.wraping}>
             <div className={styles.wrapLinks}>
               <p className={styles.blockTel}>
