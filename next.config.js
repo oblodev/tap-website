@@ -3,6 +3,7 @@ module.exports = {
   reactStrictMode: false,
   swcMinify: true,
   images: {
+    unoptimized: true,
     domains: [
       "media.graphassets.com",
       "external-vie1-1.xx.fbcdn.net",
